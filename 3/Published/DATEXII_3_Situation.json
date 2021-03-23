@@ -1,0 +1,4122 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_AbnormalTrafficTypeEnum": {
+      "title": "_AbnormalTrafficTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTrafficTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccidentCauseEnum": {
+      "title": "_AccidentCauseEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AccidentCauseEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AccidentTypeEnum": {
+      "title": "_AccidentTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AccidentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Activity": {
+      "title": "_Activity",
+      "type": "object",
+      "properties": {
+        "disturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "publicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "authorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        }
+      }
+    },
+    "_AnimalPresenceTypeEnum": {
+      "title": "_AnimalPresenceTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_AuthorityOperationTypeEnum": {
+      "title": "_AuthorityOperationTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CauseTypeEnum": {
+      "title": "_CauseTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CauseTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CollisionTypeEnum": {
+      "title": "_CollisionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CollisionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CommentTypeEnum": {
+      "title": "_CommentTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/CommentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ComplianceOptionEnum": {
+      "title": "_ComplianceOptionEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ComplianceOptionEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Conditions": {
+      "title": "_Conditions",
+      "type": "object",
+      "properties": {
+        "nonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "weatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "poorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        }
+      }
+    },
+    "_ConstructionWorkTypeEnum": {
+      "title": "_ConstructionWorkTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorkTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DelayBandEnum": {
+      "title": "_DelayBandEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DelayBandEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DelaysTypeEnum": {
+      "title": "_DelaysTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DelaysTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DisturbanceActivityTypeEnum": {
+      "title": "_DisturbanceActivityTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DrivingConditionTypeEnum": {
+      "title": "_DrivingConditionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DrivingConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EnvironmentalObstructionTypeEnum": {
+      "title": "_EnvironmentalObstructionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentOrSystemFaultTypeEnum": {
+      "title": "_EquipmentOrSystemFaultTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFaultTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_EquipmentOrSystemTypeEnum": {
+      "title": "_EquipmentOrSystemTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GeneralInstructionToRoadUsersTypeEnum": {
+      "title": "_GeneralInstructionToRoadUsersTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GeneralNetworkManagementTypeEnum": {
+      "title": "_GeneralNetworkManagementTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InfrastructureDamageTypeEnum": {
+      "title": "_InfrastructureDamageTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InjuryStatusTypeEnum": {
+      "title": "_InjuryStatusTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InjuryStatusTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InvolvementRolesEnum": {
+      "title": "_InvolvementRolesEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InvolvementRolesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MaintenanceVehicleActionsEnum": {
+      "title": "_MaintenanceVehicleActionsEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceVehicleActionsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MobilityTypeEnum": {
+      "title": "_MobilityTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MobilityTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_NetworkManagement": {
+      "title": "_NetworkManagement",
+      "type": "object",
+      "properties": {
+        "reroutingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagement"
+        },
+        "roadOrCarriagewayOrLaneManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagement"
+        },
+        "speedManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagement"
+        },
+        "generalInstructionOrMessageToRoadUsers": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionOrMessageToRoadUsers"
+        },
+        "winterDrivingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WinterDrivingManagement"
+        },
+        "generalNetworkManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagement"
+        }
+      }
+    },
+    "_NonWeatherRelatedRoadConditionTypeEnum": {
+      "title": "_NonWeatherRelatedRoadConditionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Obstruction": {
+      "title": "_Obstruction",
+      "type": "object",
+      "properties": {
+        "infrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "environmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "animalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "generalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "vehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        }
+      }
+    },
+    "_ObstructionTypeEnum": {
+      "title": "_ObstructionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OperatorAction": {
+      "title": "_OperatorAction",
+      "type": "object",
+      "properties": {
+        "reroutingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagement"
+        },
+        "roadOrCarriagewayOrLaneManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagement"
+        },
+        "speedManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagement"
+        },
+        "generalInstructionOrMessageToRoadUsers": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionOrMessageToRoadUsers"
+        },
+        "winterDrivingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WinterDrivingManagement"
+        },
+        "generalNetworkManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagement"
+        },
+        "constructionWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorks"
+        },
+        "maintenanceWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceWorks"
+        },
+        "roadsideAssistance": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadsideAssistance"
+        }
+      }
+    },
+    "_OperatorActionOriginEnum": {
+      "title": "_OperatorActionOriginEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorActionOriginEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_OperatorActionStatusEnum": {
+      "title": "_OperatorActionStatusEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorActionStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PersonCategoryEnum": {
+      "title": "_PersonCategoryEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PersonCategoryEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PlacesEnum": {
+      "title": "_PlacesEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PlacesEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PoorEnvironmentTypeEnum": {
+      "title": "_PoorEnvironmentTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ProbabilityOfOccurrenceEnum": {
+      "title": "_ProbabilityOfOccurrenceEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ProbabilityOfOccurrenceEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RelativeTrafficFlowEnum": {
+      "title": "_RelativeTrafficFlowEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RelativeTrafficFlowEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ReroutingManagementTypeEnum": {
+      "title": "_ReroutingManagementTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadMaintenanceTypeEnum": {
+      "title": "_RoadMaintenanceTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadMaintenanceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadOperatorServiceDisruptionTypeEnum": {
+      "title": "_RoadOperatorServiceDisruptionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruptionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadOrCarriagewayOrLaneManagementTypeEnum": {
+      "title": "_RoadOrCarriagewayOrLaneManagementTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadsideAssistanceTypeEnum": {
+      "title": "_RoadsideAssistanceTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadsideAssistanceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadSurfaceConditions": {
+      "title": "_RoadSurfaceConditions",
+      "type": "object",
+      "properties": {
+        "nonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "weatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        }
+      }
+    },
+    "_Roadworks": {
+      "title": "_Roadworks",
+      "type": "object",
+      "properties": {
+        "constructionWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorks"
+        },
+        "maintenanceWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceWorks"
+        }
+      }
+    },
+    "_RoadworksDurationEnum": {
+      "title": "_RoadworksDurationEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadworksDurationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_RoadworksScaleEnum": {
+      "title": "_RoadworksScaleEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadworksScaleEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ServiceDisruptionTypeEnum": {
+      "title": "_ServiceDisruptionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruptionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ServiceInformation": {
+      "title": "_ServiceInformation",
+      "type": "object",
+      "properties": {
+        "roadOperatorServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruption"
+        },
+        "serviceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruption"
+        },
+        "transitInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitInformation"
+        }
+      }
+    },
+    "_SeverityEnum": {
+      "title": "_SeverityEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SeverityEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SituationRecord": {
+      "title": "_SituationRecord",
+      "type": "object",
+      "properties": {
+        "infrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "environmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "animalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "generalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "vehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        },
+        "disturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "publicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "authorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        },
+        "abnormalTraffic": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTraffic"
+        },
+        "equipmentOrSystemFault": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFault"
+        },
+        "accident": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Accident"
+        },
+        "conditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        },
+        "nonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "weatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "poorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        },
+        "genericSituationRecord": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GenericSituationRecord"
+        },
+        "roadOperatorServiceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOperatorServiceDisruption"
+        },
+        "serviceDisruption": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceDisruption"
+        },
+        "transitInformation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitInformation"
+        },
+        "reroutingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ReroutingManagement"
+        },
+        "roadOrCarriagewayOrLaneManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadOrCarriagewayOrLaneManagement"
+        },
+        "speedManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagement"
+        },
+        "generalInstructionOrMessageToRoadUsers": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralInstructionOrMessageToRoadUsers"
+        },
+        "winterDrivingManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WinterDrivingManagement"
+        },
+        "generalNetworkManagement": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralNetworkManagement"
+        },
+        "constructionWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ConstructionWorks"
+        },
+        "maintenanceWorks": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceWorks"
+        },
+        "roadsideAssistance": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadsideAssistance"
+        }
+      }
+    },
+    "_SituationRecordVersionedReference": {
+      "title": "_SituationRecordVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SituationRecord"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SituationVersionedReference": {
+      "title": "_SituationVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Situation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SpeedManagementTypeEnum": {
+      "title": "_SpeedManagementTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SpeedManagementTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SubjectTypeOfWorksEnum": {
+      "title": "_SubjectTypeOfWorksEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SubjectTypeOfWorksEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficConstrictionTypeEnum": {
+      "title": "_TrafficConstrictionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficConstrictionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficElement": {
+      "title": "_TrafficElement",
+      "type": "object",
+      "properties": {
+        "infrastructureDamageObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/InfrastructureDamageObstruction"
+        },
+        "environmentalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EnvironmentalObstruction"
+        },
+        "animalPresenceObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AnimalPresenceObstruction"
+        },
+        "generalObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/GeneralObstruction"
+        },
+        "vehicleObstruction": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstruction"
+        },
+        "disturbanceActivity": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/DisturbanceActivity"
+        },
+        "publicEvent": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PublicEvent"
+        },
+        "authorityOperation": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AuthorityOperation"
+        },
+        "abnormalTraffic": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/AbnormalTraffic"
+        },
+        "equipmentOrSystemFault": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/EquipmentOrSystemFault"
+        },
+        "accident": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Accident"
+        },
+        "conditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        },
+        "nonWeatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NonWeatherRelatedRoadConditions"
+        },
+        "weatherRelatedRoadConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/WeatherRelatedRoadConditions"
+        },
+        "poorEnvironmentConditions": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/PoorEnvironmentConditions"
+        }
+      }
+    },
+    "_TrafficFlowCharacteristicsEnum": {
+      "title": "_TrafficFlowCharacteristicsEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficFlowCharacteristicsEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TrafficTypeEnum": {
+      "title": "_TrafficTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TransitServiceInformationEnum": {
+      "title": "_TransitServiceInformationEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitServiceInformationEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_TransitServiceTypeEnum": {
+      "title": "_TransitServiceTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TransitServiceTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleObstructionTypeEnum": {
+      "title": "_VehicleObstructionTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleObstructionTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VehicleProblemCauseEnum": {
+      "title": "_VehicleProblemCauseEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Situation.json#/definitions/VehicleProblemCauseEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "AbnormalTraffic": {
+      "title": "AbnormalTraffic",
+      "description": "A traffic condition which is not normal.",
+      "type": "object",
+      "properties": {
+        "abnormalTrafficType": {
+          "title": "abnormalTrafficType",
+          "description": "A characterization of the nature of abnormal traffic flow, i.e. specifically relating to the nature of the traffic movement, implying a level of service.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AbnormalTrafficTypeEnum"
+        },
+        "numberOfVehiclesWaiting": {
+          "title": "numberOfVehiclesWaiting",
+          "description": "The number of vehicles waiting in a queue.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "queueLength": {
+          "title": "queueLength",
+          "description": "The length of a queue or the average length of queues in separate lanes due to a situation.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "relativeTrafficFlow": {
+          "title": "relativeTrafficFlow",
+          "description": "Assessment of the traffic flow conditions relative to normally expected conditions at this date/time.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RelativeTrafficFlowEnum"
+        },
+        "trafficFlowCharacteristics": {
+          "title": "trafficFlowCharacteristics",
+          "description": "The consistency (steadiness) of the traffic flow.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficFlowCharacteristicsEnum"
+        },
+        "trafficTrendType": {
+          "title": "trafficTrendType",
+          "description": "A characterization of the trend in the traffic conditions at the specified location and direction.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_TrafficTrendTypeEnum"
+        },
+        "_abnormalTrafficExtension": {
+          "title": "_abnormalTrafficExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AbnormalTrafficTypeEnum": {
+      "title": "AbnormalTrafficTypeEnum",
+      "description": "Descriptive terms for abnormal traffic conditions specifically relating to the nature of the traffic movement, implying levels of service.",
+      "type": "string",
+      "enum": [
+        "stationaryTraffic",
+        "queuingTraffic",
+        "slowTraffic",
+        "heavyTraffic",
+        "unspecifiedAbnormalTraffic",
+        "other",
+        "_extended"
+      ]
+    },
+    "Accident": {
+      "title": "Accident",
+      "description": "Accidents are events where one or more vehicles are involved in collisions or in leaving the roadway. These include collisions between vehicles or with other road users or obstacles.",
+      "type": "object",
+      "properties": {
+        "accidentCause": {
+          "title": "accidentCause",
+          "description": "A descriptor indicating the most significant factor causing an accident.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentCauseEnum"
+        },
+        "accidentType": {
+          "title": "accidentType",
+          "description": "A characterization of the nature of the accident.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentTypeEnum"
+          },
+          "minItems": 1
+        },
+        "collisionType": {
+          "title": "collisionType",
+          "description": "Identifies a type of collision",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CollisionTypeEnum"
+        },
+        "totalNumberOfPeopleInvolved": {
+          "title": "totalNumberOfPeopleInvolved",
+          "description": "The total number of people that are involved.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "totalNumberOfVehiclesInvolved": {
+          "title": "totalNumberOfVehiclesInvolved",
+          "description": "The total number of vehicles that are involved.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "vehicleInvolved": {
+          "title": "vehicleInvolved",
+          "description": "The vehicle involved in the accident.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Vehicle"
+          },
+          "minItems": 0
+        },
+        "groupOfVehiclesInvolved": {
+          "title": "groupOfVehiclesInvolved",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/GroupOfVehiclesInvolved"
+          },
+          "minItems": 0
+        },
+        "groupOfPeopleInvolved": {
+          "title": "groupOfPeopleInvolved",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/GroupOfPeopleInvolved"
+          },
+          "minItems": 0
+        },
+        "_accidentExtension": {
+          "title": "_accidentExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "accidentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AccidentCauseEnum": {
+      "title": "AccidentCauseEnum",
+      "description": "Collection of the type of accident causes.",
+      "type": "string",
+      "enum": [
+        "avoidanceOfObstacles",
+        "driverDistraction",
+        "driverDrugAbuse",
+        "driverIllness",
+        "exceedingSpeedsLimits",
+        "excessAlcohol",
+        "excessiveDriverTiredness",
+        "impermissibleManoeuvre",
+        "limitedVisibility",
+        "notKeepingASafeDistance",
+        "onTheWrongSideOfTheRoad",
+        "pedestrianInRoad",
+        "poorLaneAdherence",
+        "poorMergeEntryOrExitJudgement",
+        "poorRoadSurfaceCondition",
+        "poorSurfaceAdherence",
+        "undisclosed",
+        "unknown",
+        "vehicleFailure",
+        "other",
+        "_extended"
+      ]
+    },
+    "AccidentTypeEnum": {
+      "title": "AccidentTypeEnum",
+      "description": "Collection of descriptive terms for types of accidents.",
+      "type": "string",
+      "enum": [
+        "accident",
+        "accidentInvolvingHazardousMaterials",
+        "accidentInvolvingHeavyLorries",
+        "accidentInvolvingMassTransitVehicle",
+        "accidentInvolvingPublicTransport",
+        "accidentInvolvingRadioactiveMaterial",
+        "accidentInvolvingTrain",
+        "collision",
+        "multipleVehicleAccident",
+        "secondaryAccident",
+        "seriousInjuryOrFatalAccident",
+        "vehicleStuckUnderBridge",
+        "other",
+        "_extended"
+      ]
+    },
+    "Activity": {
+      "title": "Activity",
+      "description": "Deliberate human action external to the traffic stream or roadway which could disrupt traffic.",
+      "type": "object",
+      "properties": {
+        "mobilityOfActivity": {
+          "title": "mobilityOfActivity",
+          "description": "Mobility of the activity.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "_activityExtension": {
+          "title": "_activityExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "AnimalPresenceObstruction": {
+      "title": "AnimalPresenceObstruction",
+      "description": "An obstruction on the road resulting from the presence of animals.",
+      "type": "object",
+      "properties": {
+        "alive": {
+          "title": "alive",
+          "description": "Indicates whether the identified animals are dead (immobile) or alive (potentially mobile).",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "animalPresenceType": {
+          "title": "animalPresenceType",
+          "description": "Indicates the nature of animals present on or near the roadway.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AnimalPresenceTypeEnum"
+        },
+        "_animalPresenceObstructionExtension": {
+          "title": "_animalPresenceObstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "animalPresenceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "AnimalPresenceTypeEnum": {
+      "title": "AnimalPresenceTypeEnum",
+      "description": "Types of animal presence.",
+      "type": "string",
+      "enum": [
+        "animalsOnTheRoad",
+        "herdOfAnimalsOnTheRoad",
+        "largeAnimalsOnTheRoad",
+        "smallAnimalsOnTheRoad",
+        "wildAnimalsOnTheRoad",
+        "_extended"
+      ]
+    },
+    "AuthorityOperation": {
+      "title": "AuthorityOperation",
+      "description": "Authority initiated operation or activity that could disrupt traffic.",
+      "type": "object",
+      "properties": {
+        "authorityOperationType": {
+          "title": "authorityOperationType",
+          "description": "Type of authority initiated operation or activity that could disrupt traffic. ",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AuthorityOperationTypeEnum"
+        },
+        "_authorityOperationExtension": {
+          "title": "_authorityOperationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "authorityOperationType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "AuthorityOperationTypeEnum": {
+      "title": "AuthorityOperationTypeEnum",
+      "description": "Types of authority operations.",
+      "type": "string",
+      "enum": [
+        "accidentInvestigationWork",
+        "bombSquadInAction",
+        "civilEmergency",
+        "customsOperation",
+        "juridicalReconstruction",
+        "policeCheckPoint",
+        "policeInvestigation",
+        "roadOperatorCheckPoint",
+        "snowChainOnBoardOrSnowTyresMountedCheck",
+        "snowChainOrSnowTyresMountedCheck",
+        "survey",
+        "undefinedAuthorityActivity",
+        "transportOfVip",
+        "vehicleInspectionCheckPoint",
+        "vehicleWeighing",
+        "weighInMotion",
+        "other",
+        "_extended"
+      ]
+    },
+    "Cause": {
+      "title": "Cause",
+      "description": "Contains details of the cause of a record within a situation",
+      "type": "object",
+      "properties": {
+        "causeDescription": {
+          "title": "causeDescription",
+          "description": "Description of a cause which is not managed by the publication creator (e.g. an off network cause).",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "causeType": {
+          "title": "causeType",
+          "description": "Indicates an external influence that may be the causation of components of a situation.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CauseTypeEnum"
+        },
+        "detailedCauseType": {
+          "title": "detailedCauseType",
+          "description": "The type of cause, expressed in more detail than the NonManagedCause causeType. If both are present then they must be consistent.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/DetailedCauseType"
+        },
+        "managedCause": {
+          "title": "managedCause",
+          "description": "A reference to another situation record which defines a cause of the event defined here.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecordReference"
+        },
+        "_causeExtension": {
+          "title": "_causeExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "CauseTypeEnum": {
+      "title": "CauseTypeEnum",
+      "description": "Types of causes of situations which are not managed or are off network.",
+      "type": "string",
+      "enum": [
+        "abnormalTraffic",
+        "accident",
+        "animalPresence",
+        "authorityOperation",
+        "constructionWork",
+        "disturbance",
+        "drivingConditions",
+        "environmentalObstruction",
+        "equipmentOrSystemFault",
+        "infrastructureDamageObstruction",
+        "instructionToRoadUsers",
+        "networkManagement",
+        "nonWeatherRelatedRoadConditions",
+        "obstruction",
+        "poorEnvironment",
+        "publicEvent",
+        "rerouting",
+        "roadMaintenance",
+        "roadOperatorServiceDisruption",
+        "roadOrCarriagewayOrLaneManagement",
+        "roadsideAssistance",
+        "roadsideServiceDisruption",
+        "speedManagement",
+        "transitServiceDisruption",
+        "vehicleObstruction",
+        "weatherRelatedRoadConditions",
+        "winterEquipmentManagement",
+        "earlierEvent",
+        "earlierIncident",
+        "holidayTraffic",
+        "problemsAtBorderPost",
+        "problemsAtCustomPost",
+        "problemsOnLocalRoads",
+        "roadsideEvent",
+        "rubberNecking",
+        "technicalProblems",
+        "vandalism",
+        "other",
+        "_extended"
+      ]
+    },
+    "CollisionTypeEnum": {
+      "title": "CollisionTypeEnum",
+      "description": "Identifies a type of collision",
+      "type": "string",
+      "enum": [
+        "collisionWithAnimal",
+        "collisionWithObstacle",
+        "collisionWithPerson",
+        "headOnCollision",
+        "headOnOrSideCollision",
+        "multipleVehicleCollision",
+        "rearCollision",
+        "sideCollision",
+        "_extended"
+      ]
+    },
+    "Comment": {
+      "title": "Comment",
+      "description": "A free text comment with an optional date/time stamp that can be used by the operator to convey un-coded observations/information.",
+      "type": "object",
+      "properties": {
+        "comment": {
+          "title": "comment",
+          "description": "A free text comment that can be used by the operator to convey un-coded observations/information.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "commentDateTime": {
+          "title": "commentDateTime",
+          "description": "The date/time at which the comment was made.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "commentType": {
+          "title": "commentType",
+          "description": "A classification of the the type of comment.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_CommentTypeEnum"
+        },
+        "_commentExtension": {
+          "title": "_commentExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "comment"
+      ]
+    },
+    "CommentTypeEnum": {
+      "title": "CommentTypeEnum",
+      "description": "Classification of comment types.",
+      "type": "string",
+      "enum": [
+        "abnormalLoadMovementNote",
+        "dataProcessingNote",
+        "description",
+        "internalNote",
+        "roadworksName",
+        "warning",
+        "other",
+        "_extended"
+      ]
+    },
+    "ComplianceOptionEnum": {
+      "title": "ComplianceOptionEnum",
+      "description": "Types of compliance.",
+      "type": "string",
+      "enum": [
+        "advisory",
+        "mandatory",
+        "_extended"
+      ]
+    },
+    "Conditions": {
+      "title": "Conditions",
+      "description": "Any conditions which have the potential to degrade normal driving conditions.",
+      "type": "object",
+      "properties": {
+        "drivingConditionType": {
+          "title": "drivingConditionType",
+          "description": "Description of the driving conditions at the specified location.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DrivingConditionTypeEnum"
+        },
+        "_conditionsExtension": {
+          "title": "_conditionsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "ConstructionWorks": {
+      "title": "ConstructionWorks",
+      "description": "Roadworks involving the construction of new infrastructure.",
+      "type": "object",
+      "properties": {
+        "constructionWorkType": {
+          "title": "constructionWorkType",
+          "description": "The type of construction work being performed.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ConstructionWorkTypeEnum"
+        },
+        "_constructionWorksExtension": {
+          "title": "_constructionWorksExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "constructionWorkType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Roadworks"
+        }
+      ]
+    },
+    "ConstructionWorkTypeEnum": {
+      "title": "ConstructionWorkTypeEnum",
+      "description": "Types of works relating to construction.",
+      "type": "string",
+      "enum": [
+        "blastingWork",
+        "constructionWork",
+        "demolitionWork",
+        "roadImprovementOrUpgrading",
+        "roadWideningWork",
+        "_extended"
+      ]
+    },
+    "DelayBandEnum": {
+      "title": "DelayBandEnum",
+      "description": "Classifications of a delay banded by length (i.e. the additional travel time).",
+      "type": "string",
+      "enum": [
+        "negligible",
+        "upToTenMinutes",
+        "betweenTenMinutesAndThirtyMinutes",
+        "betweenThirtyMinutesAndOneHour",
+        "betweenOneHourAndThreeHours",
+        "betweenThreeHoursAndSixHours",
+        "longerThanSixHours",
+        "_extended"
+      ]
+    },
+    "Delays": {
+      "title": "Delays",
+      "description": "The details of the delays being caused by the situation element defined in the situation record. It is recommended to only use one of the optional attributes to avoid confusion.",
+      "type": "object",
+      "properties": {
+        "delayBand": {
+          "title": "delayBand",
+          "description": "The time band within which the additional travel time due to adverse travel conditions of any kind falls, when compared to \"normal conditions\".",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DelayBandEnum"
+        },
+        "delaysType": {
+          "title": "delaysType",
+          "description": "Coarse classification of the delay.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DelaysTypeEnum"
+        },
+        "delayTimeValue": {
+          "title": "delayTimeValue",
+          "description": "The value of the additional travel time due to adverse travel conditions of any kind, when compared to \"normal conditions\", given in seconds.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "_delaysExtension": {
+          "title": "_delaysExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DelaysTypeEnum": {
+      "title": "DelaysTypeEnum",
+      "description": "Course classifications of a delay.",
+      "type": "string",
+      "enum": [
+        "delays",
+        "delaysOfUncertainDuration",
+        "longDelays",
+        "veryLongDelays",
+        "_extended"
+      ]
+    },
+    "DetailedCauseType": {
+      "title": "DetailedCauseType",
+      "description": "The type of influence that may be the cause of components of a situation. At least one attribute must be populated.",
+      "type": "object",
+      "properties": {
+        "abnormalTrafficType": {
+          "title": "abnormalTrafficType",
+          "description": "A characterization of the nature of abnormal traffic flow, i.e. specifically relating to the nature of the traffic movement.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AbnormalTrafficTypeEnum"
+        },
+        "accidentType": {
+          "title": "accidentType",
+          "description": "A characterization of the nature of the accident.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_AccidentTypeEnum"
+          },
+          "minItems": 0
+        },
+        "animalPresenceType": {
+          "title": "animalPresenceType",
+          "description": "Indicates the nature of animals present on or near the roadway.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AnimalPresenceTypeEnum"
+        },
+        "authorityOperationType": {
+          "title": "authorityOperationType",
+          "description": "Type of authority initiated operation or activity that could disrupt traffic. ",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_AuthorityOperationTypeEnum"
+        },
+        "constructionWorkType": {
+          "title": "constructionWorkType",
+          "description": "The type of construction work being performed.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ConstructionWorkTypeEnum"
+        },
+        "disturbanceActivityType": {
+          "title": "disturbanceActivityType",
+          "description": "Includes all situations of a public disorder type or of an alert type, with potential to disrupt traffic.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DisturbanceActivityTypeEnum"
+        },
+        "drivingConditionType": {
+          "title": "drivingConditionType",
+          "description": "Description of the driving conditions at the specified location.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DrivingConditionTypeEnum"
+        },
+        "environmentalObstructionType": {
+          "title": "environmentalObstructionType",
+          "description": "Characterization of an obstruction on the road resulting from an environmental cause.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EnvironmentalObstructionTypeEnum"
+        },
+        "equipmentOrSystemFaultType": {
+          "title": "equipmentOrSystemFaultType",
+          "description": "Failure, malfunction or non operational condition of equipment or system.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemFaultTypeEnum"
+        },
+        "generalInstructionToRoadUsersType": {
+          "title": "generalInstructionToRoadUsersType",
+          "description": "General instruction that is issued by the network/road operator which is applicable to drivers and sometimes passengers.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "generalNetworkManagementType": {
+          "title": "generalNetworkManagementType",
+          "description": "The type of traffic management action instigated by the network/road operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralNetworkManagementTypeEnum"
+        },
+        "infrastructureDamageType": {
+          "title": "infrastructureDamageType",
+          "description": "Characterization of an obstruction on the road resulting from the failure or damage of infrastructure on, under, above or close to the road.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InfrastructureDamageTypeEnum"
+        },
+        "nonWeatherRelatedRoadConditionType": {
+          "title": "nonWeatherRelatedRoadConditionType",
+          "description": "The type of road conditions which are not related to the weather.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_NonWeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "obstructionType": {
+          "title": "obstructionType",
+          "description": "Characterization of the type of general obstruction.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ObstructionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "poorEnvironmentType": {
+          "title": "poorEnvironmentType",
+          "description": "The type of environment condition which is affecting driving conditions.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PoorEnvironmentTypeEnum"
+          },
+          "minItems": 0
+        },
+        "publicEventType": {
+          "title": "publicEventType",
+          "description": "Type of public event which could disrupt traffic.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "reroutingManagementType": {
+          "title": "reroutingManagementType",
+          "description": "Type of rerouting management action instigated by operator.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ReroutingManagementTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadMaintenanceType": {
+          "title": "roadMaintenanceType",
+          "description": "The type of road maintenance or installation work at the specified location.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadMaintenanceTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadOperatorServiceDisruptionType": {
+          "title": "roadOperatorServiceDisruptionType",
+          "description": "The type of road operator service which is disrupted.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOperatorServiceDisruptionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "roadOrCarriagewayOrLaneManagementType": {
+          "title": "roadOrCarriagewayOrLaneManagementType",
+          "description": "Type of road, carriageway or lane management action instigated by operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "roadsideAssistanceType": {
+          "title": "roadsideAssistanceType",
+          "description": "Indicates the nature of the road side assistance that will be, is or has been provided.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadsideAssistanceTypeEnum"
+        },
+        "roadsideServiceDisruptionType": {
+          "title": "roadsideServiceDisruptionType",
+          "description": "The type of roadside service which is disrupted.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ServiceDisruptionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "speedManagementType": {
+          "title": "speedManagementType",
+          "description": "Type of speed management action instigated by operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SpeedManagementTypeEnum"
+        },
+        "transitServiceInformation": {
+          "title": "transitServiceInformation",
+          "description": "Information about transit services.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceInformationEnum"
+        },
+        "vehicleObstructionType": {
+          "title": "vehicleObstructionType",
+          "description": "Characterization of an obstruction on the road caused by one or more vehicles.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleObstructionTypeEnum"
+        },
+        "weatherRelatedRoadConditionType": {
+          "title": "weatherRelatedRoadConditionType",
+          "description": "The type of road surface condition that is related to the weather which is affecting the driving conditions.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 0
+        },
+        "winterEquipmentManagementType": {
+          "title": "winterEquipmentManagementType",
+          "description": "Type of winter equipment management action instigated by operator.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_WinterEquipmentManagementTypeEnum"
+        },
+        "_detailedCauseTypeExtension": {
+          "title": "_detailedCauseTypeExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisturbanceActivity": {
+      "title": "DisturbanceActivity",
+      "description": "Deliberate human action of either a public disorder nature or of a situation alert type which could disrupt traffic.",
+      "type": "object",
+      "properties": {
+        "disturbanceActivityType": {
+          "title": "disturbanceActivityType",
+          "description": "Includes all situations of a public disorder type or of an alert type, with potential to disrupt traffic.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_DisturbanceActivityTypeEnum"
+        },
+        "_disturbanceActivityExtension": {
+          "title": "_disturbanceActivityExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "disturbanceActivityType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "DisturbanceActivityTypeEnum": {
+      "title": "DisturbanceActivityTypeEnum",
+      "description": "Types of disturbance activities.",
+      "type": "string",
+      "enum": [
+        "airRaid",
+        "altercationOfVehicleOccupants",
+        "assault",
+        "assetDestruction",
+        "attack",
+        "attackOnVehicle",
+        "blockadeOrBarrier",
+        "bombAlert",
+        "crowd",
+        "demonstration",
+        "evacuation",
+        "filterBlockade",
+        "goSlowOperation",
+        "gunfireOnRoadway",
+        "illVehicleOccupants",
+        "march",
+        "peopleThrowingObjectsOnTheRoad",
+        "publicDisturbance",
+        "radioactiveLeakAlert",
+        "riot",
+        "sabotage",
+        "securityAlert",
+        "securityIncident",
+        "sightseersObstructingAccess",
+        "strike",
+        "terroristIncident",
+        "theft",
+        "toxicCloudAlert",
+        "unspecifiedAlert",
+        "other",
+        "_extended"
+      ]
+    },
+    "DrivingConditionTypeEnum": {
+      "title": "DrivingConditionTypeEnum",
+      "description": "Types of the perceived driving conditions.",
+      "type": "string",
+      "enum": [
+        "impossible",
+        "hazardous",
+        "normal",
+        "passableWithCare",
+        "unknown",
+        "veryHazardous",
+        "winterConditions",
+        "other",
+        "_extended"
+      ]
+    },
+    "EnvironmentalObstruction": {
+      "title": "EnvironmentalObstruction",
+      "description": "An obstruction on the road resulting from an environmental cause.",
+      "type": "object",
+      "properties": {
+        "depth": {
+          "title": "depth",
+          "description": "The depth of flooding or of snow on the road.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "environmentalObstructionType": {
+          "title": "environmentalObstructionType",
+          "description": "Characterization of an obstruction on the road resulting from an environmental cause.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EnvironmentalObstructionTypeEnum"
+        },
+        "_environmentalObstructionExtension": {
+          "title": "_environmentalObstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "environmentalObstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "EnvironmentalObstructionTypeEnum": {
+      "title": "EnvironmentalObstructionTypeEnum",
+      "description": "Types of environmental obstructions.",
+      "type": "string",
+      "enum": [
+        "avalanches",
+        "earthquakeDamage",
+        "fallenTrees",
+        "fallingIce",
+        "fallingLightIceOrSnow",
+        "flashFloods",
+        "flooding",
+        "forestFire",
+        "grassFire",
+        "landslips",
+        "mudSlide",
+        "sewerOverflow",
+        "rockfalls",
+        "seriousFire",
+        "smokeOrFumes",
+        "stormDamage",
+        "subsidence",
+        "other",
+        "_extended"
+      ]
+    },
+    "EquipmentOrSystemFault": {
+      "title": "EquipmentOrSystemFault",
+      "description": "Equipment or system which is faulty, malfunctioning or not in a fully operational state that may be of interest or concern to road operators and road users.",
+      "type": "object",
+      "properties": {
+        "equipmentOrSystemFaultType": {
+          "title": "equipmentOrSystemFaultType",
+          "description": "Failure, malfunction or non operational condition of equipment or system.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemFaultTypeEnum"
+        },
+        "faultyEquipmentOrSystemType": {
+          "title": "faultyEquipmentOrSystemType",
+          "description": "The type of equipment or system which is faulty, malfunctioning or not in a fully operational state.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_EquipmentOrSystemTypeEnum"
+        },
+        "_equipmentOrSystemFaultExtension": {
+          "title": "_equipmentOrSystemFaultExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "equipmentOrSystemFaultType",
+        "faultyEquipmentOrSystemType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "EquipmentOrSystemFaultTypeEnum": {
+      "title": "EquipmentOrSystemFaultTypeEnum",
+      "description": "Types of fault, malfunctioning or non operational conditions of equipment or systems.",
+      "type": "string",
+      "enum": [
+        "notWorking",
+        "outOfService",
+        "workingIncorrectly",
+        "workingIntermittently",
+        "_extended"
+      ]
+    },
+    "EquipmentOrSystemTypeEnum": {
+      "title": "EquipmentOrSystemTypeEnum",
+      "description": "Types of equipment and systems used to support the operation of the road network.",
+      "type": "string",
+      "enum": [
+        "anprCameras",
+        "automatedTollSystem",
+        "cctvCameras",
+        "emergencyRoadsideTelephones",
+        "fireDetectionEquipment",
+        "galleryLights",
+        "laneControlSigns",
+        "levelCrossing",
+        "matrixSigns",
+        "rampControls",
+        "roadsideCommunicationsSystem",
+        "roadsidePowerSystem",
+        "speedControlSigns",
+        "streetLighting",
+        "temporaryTrafficLights",
+        "tollGates",
+        "trafficLightSets",
+        "trafficSignals",
+        "tunnelEmergencyPhones",
+        "tunnelFireFightingEquipment",
+        "tunnelLights",
+        "tunnelMobileCommunication",
+        "tunnelRadioCommunication",
+        "tunnelSafetySystem",
+        "tunnelVentilation",
+        "variableMessageSigns",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralInstructionOrMessageToRoadUsers": {
+      "title": "GeneralInstructionOrMessageToRoadUsers",
+      "description": "General instruction and/or message that is issued by the network/road operator which is applicable to drivers and sometimes passengers.",
+      "type": "object",
+      "properties": {
+        "generalInstructionToRoadUsersType": {
+          "title": "generalInstructionToRoadUsersType",
+          "description": "General instruction that is issued by the network/road operator which is applicable to drivers and sometimes passengers.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralInstructionToRoadUsersTypeEnum"
+        },
+        "generalMessageToRoadUsers": {
+          "title": "generalMessageToRoadUsers",
+          "description": "General message that is issued by the network/road operator which is applicable to drivers and sometimes passengers, e.g. details about an amber alert (missing or abducted child alert).",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_generalInstructionOrMessageToRoadUsersExtension": {
+          "title": "_generalInstructionOrMessageToRoadUsersExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "GeneralInstructionToRoadUsersTypeEnum": {
+      "title": "GeneralInstructionToRoadUsersTypeEnum",
+      "description": "General instructions that may be issued to road users (specifically drivers and sometimes passengers) by an operator or operational system in support of network management activities or emergency situations.",
+      "type": "string",
+      "enum": [
+        "allowEmergencyVehiclesToPass",
+        "approachWithCare",
+        "avoidTheArea",
+        "closeAllWindowsTurnOffHeaterAndVents",
+        "crossJunctionWithCare",
+        "doNotAllowUnnecessaryGaps",
+        "doNotLeaveYourVehicle",
+        "doNotThrowOutAnyBurningObjects",
+        "doNotUseNavigationSystems",
+        "driveCarefully",
+        "driveWithExtremeCaution",
+        "flashYourLights",
+        "followTheVehicleInFrontSmoothly",
+        "increaseNormalFollowingDistance",
+        "inEmergencyWaitForPatrolService",
+        "keepYourDistance",
+        "leaveYourVehicleProceedToNextSafePlace",
+        "noNakedFlames",
+        "noOvertaking",
+        "noSmoking",
+        "noStopping",
+        "noUturns",
+        "observeAmberAlert",
+        "observeSignals",
+        "observeSigns",
+        "onlyTravelIfAbsolutelyNecessary",
+        "overtakeWithCare",
+        "pullOverToTheEdgeOfTheRoadway",
+        "stopAtNextSafePlace",
+        "stopAtNextServiceArea",
+        "switchOffEngine",
+        "switchOffMobilePhonesAndTwoWayRadios",
+        "testYourBrakes",
+        "useBusService",
+        "useFogLights",
+        "useHazardWarningLights",
+        "useHeadlights",
+        "useRailService",
+        "useTramService",
+        "useUndergroundService",
+        "waitForEscortVehicle",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralNetworkManagement": {
+      "title": "GeneralNetworkManagement",
+      "description": "Network management action that is instigated either manually or automatically by the network/road operator.  Compliance with any resulting control may be advisory or mandatory.",
+      "type": "object",
+      "properties": {
+        "generalNetworkManagementType": {
+          "title": "generalNetworkManagementType",
+          "description": "The type of traffic management action instigated by the network/road operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_GeneralNetworkManagementTypeEnum"
+        },
+        "trafficManuallyDirectedBy": {
+          "title": "trafficManuallyDirectedBy",
+          "description": "Type of person that is manually directing traffic (applicable if generalNetworkManagementType is set to \"trafficBeingManuallyDirected\").",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_PersonCategoryEnum"
+        },
+        "_generalNetworkManagementExtension": {
+          "title": "_generalNetworkManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "generalNetworkManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "GeneralNetworkManagementTypeEnum": {
+      "title": "GeneralNetworkManagementTypeEnum",
+      "description": "Types of network management actions.",
+      "type": "string",
+      "enum": [
+        "bridgeSwingInOperation",
+        "convoyService",
+        "obstacleSignalling",
+        "rampMeteringInOperation",
+        "temporaryTrafficLights",
+        "tollGatesOpen",
+        "trafficBeingManuallyDirected",
+        "trafficHeld",
+        "other",
+        "_extended"
+      ]
+    },
+    "GeneralObstruction": {
+      "title": "GeneralObstruction",
+      "description": "Any stationary or moving obstacle of a physical nature, other than of an animal, vehicle, environmental, or damaged equipment nature.",
+      "type": "object",
+      "properties": {
+        "obstructionType": {
+          "title": "obstructionType",
+          "description": "Characterization of the type of general obstruction.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ObstructionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "groupOfPeopleInvolved": {
+          "title": "groupOfPeopleInvolved",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/GroupOfPeopleInvolved"
+          },
+          "minItems": 0
+        },
+        "_generalObstructionExtension": {
+          "title": "_generalObstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "obstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "GenericSituationRecord": {
+      "title": "GenericSituationRecord",
+      "description": "A generic SituationRecord for use when adding level B extensions at the SituationRecord level.",
+      "type": "object",
+      "properties": {
+        "genericSituationRecordName": {
+          "title": "genericSituationRecordName",
+          "description": "The name of the GenericSituationRecord.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "_genericSituationRecordExtension": {
+          "title": "_genericSituationRecordExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "genericSituationRecordName"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "GroupOfPeopleInvolved": {
+      "title": "GroupOfPeopleInvolved",
+      "description": "Group of people involved in the event having common characteristics and/or status.",
+      "type": "object",
+      "properties": {
+        "numberOfPeople": {
+          "title": "numberOfPeople",
+          "description": "The number of people of this group that are involved.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "injuryStatusType": {
+          "title": "injuryStatusType",
+          "description": "The injury status of the people involved.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InjuryStatusTypeEnum"
+        },
+        "involvementRole": {
+          "title": "involvementRole",
+          "description": "The involvement role of the people.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InvolvementRolesEnum"
+        },
+        "categoryOfPeopleInvolved": {
+          "title": "categoryOfPeopleInvolved",
+          "description": "The category of persons involved.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_PersonCategoryEnum"
+        },
+        "_groupOfPeopleInvolvedExtension": {
+          "title": "_groupOfPeopleInvolvedExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "Impact": {
+      "title": "Impact",
+      "description": "An assessment of the impact that an event or operator action defined by the situation record has on the driving conditions.",
+      "type": "object",
+      "properties": {
+        "capacityRemaining": {
+          "title": "capacityRemaining",
+          "description": "The ratio of current capacity to the normal (free flow) road capacity in the defined direction, expressed as a percentage. Capacity is the maximum number of vehicles that can pass a specified point on the road, in unit time given the specified conditions.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Percentage"
+        },
+        "numberOfLanesRestricted": {
+          "title": "numberOfLanesRestricted",
+          "description": "The number of normally usable lanes on the carriageway which are now restricted either fully or partially (this may include the hard shoulder if it is normally available for operational use, e.g. in hard shoulder running schemes).",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "numberOfOperationalLanes": {
+          "title": "numberOfOperationalLanes",
+          "description": "The number of usable lanes in the specified direction which remain fully operational (this may include the hard shoulder if it is being used as an operational lane).",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "residualLaneWidth": {
+          "title": "residualLaneWidth",
+          "description": "The width of lanes after any lane narrowing",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "residualRoadWidth": {
+          "title": "residualRoadWidth",
+          "description": "The total width of the combined operational lanes in the specified direction.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "delays": {
+          "title": "delays",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Delays"
+        },
+        "_impactExtension": {
+          "title": "_impactExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "InfrastructureDamageObstruction": {
+      "title": "InfrastructureDamageObstruction",
+      "description": "An obstruction on the road resulting from the failure or damage of infrastructure on, under, above or close to the road.",
+      "type": "object",
+      "properties": {
+        "infrastructureDamageType": {
+          "title": "infrastructureDamageType",
+          "description": "Characterization of an obstruction on the road resulting from the failure or damage of infrastructure on, under, above or close to the road.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_InfrastructureDamageTypeEnum"
+        },
+        "_infrastructureDamageObstructionExtension": {
+          "title": "_infrastructureDamageObstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "infrastructureDamageType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "InfrastructureDamageTypeEnum": {
+      "title": "InfrastructureDamageTypeEnum",
+      "description": "Types of infrastructure damage which may have an effect on the road network.",
+      "type": "string",
+      "enum": [
+        "burstPipe",
+        "burstWaterMain",
+        "collapsedSewer",
+        "damagedBridge",
+        "damagedCrashBarrier",
+        "damagedFlyover",
+        "damagedGallery",
+        "damagedGantry",
+        "damagedRoadSurface",
+        "damagedTunnel",
+        "damagedViaduct",
+        "fallenPowerCables",
+        "gasLeak",
+        "weakBridge",
+        "other",
+        "_extended"
+      ]
+    },
+    "InjuryStatusTypeEnum": {
+      "title": "InjuryStatusTypeEnum",
+      "description": "Types of injury status of people.",
+      "type": "string",
+      "enum": [
+        "dead",
+        "injured",
+        "seriouslyInjured",
+        "slightlyInjured",
+        "uninjured",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "InvolvementRolesEnum": {
+      "title": "InvolvementRolesEnum",
+      "description": "Involvement role of a person in event.",
+      "type": "string",
+      "enum": [
+        "cyclist",
+        "motorcyclist",
+        "pedestrian",
+        "unknown",
+        "vehicleDriver",
+        "vehicleOccupant",
+        "vehiclePassenger",
+        "witness",
+        "_extended"
+      ]
+    },
+    "MaintenanceVehicleActionsEnum": {
+      "title": "MaintenanceVehicleActionsEnum",
+      "description": "Types of maintenance vehicle actions associated with roadworks.",
+      "type": "string",
+      "enum": [
+        "maintenanceAction",
+        "maintenanceVehiclesMergingIntoTrafficFlow",
+        "slowMoving",
+        "stoppingToServiceEquipments",
+        "_extended"
+      ]
+    },
+    "MaintenanceVehicles": {
+      "title": "MaintenanceVehicles",
+      "description": "Details of the maintenance vehicles involved in the roadworks activity.",
+      "type": "object",
+      "properties": {
+        "numberOfMaintenanceVehicles": {
+          "title": "numberOfMaintenanceVehicles",
+          "description": "The number of maintenance vehicles associated with the roadworks activities at the specified location.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maintenanceVehicleActions": {
+          "title": "maintenanceVehicleActions",
+          "description": "The actions of the maintenance vehicles associated with the roadworks activities.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_MaintenanceVehicleActionsEnum"
+          },
+          "minItems": 0
+        },
+        "_maintenanceVehiclesExtension": {
+          "title": "_maintenanceVehiclesExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "MaintenanceWorks": {
+      "title": "MaintenanceWorks",
+      "description": "Roadworks involving the maintenance or installation of infrastructure.",
+      "type": "object",
+      "properties": {
+        "roadMaintenanceType": {
+          "title": "roadMaintenanceType",
+          "description": "The type of road maintenance or installation work at the specified location.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadMaintenanceTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_maintenanceWorksExtension": {
+          "title": "_maintenanceWorksExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadMaintenanceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Roadworks"
+        }
+      ]
+    },
+    "Mobility": {
+      "title": "Mobility",
+      "description": "An indication of whether the associated instance of a SituationRecord is mobile (e.g. a march or parade moving along a road) or stationary.",
+      "type": "object",
+      "properties": {
+        "mobilityType": {
+          "title": "mobilityType",
+          "description": "An indication of whether the associated instance of a SituationRecord is mobile (e.g. a march or parade moving along a road) or stationary.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_MobilityTypeEnum"
+        },
+        "speed": {
+          "title": "speed",
+          "description": "Speed of the mobile entity.",
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "_mobilityExtension": {
+          "title": "_mobilityExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "mobilityType"
+      ]
+    },
+    "MobilityTypeEnum": {
+      "title": "MobilityTypeEnum",
+      "description": "Types of mobility relating to a situation element defined by a SituationReord.",
+      "type": "string",
+      "enum": [
+        "mobile",
+        "stationary",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "NetworkManagement": {
+      "title": "NetworkManagement",
+      "description": "Network management action which is applicable to the road network and its users.",
+      "type": "object",
+      "properties": {
+        "complianceOption": {
+          "title": "complianceOption",
+          "description": "Defines whether the network management instruction or the control resulting from a network management action is advisory or mandatory.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ComplianceOptionEnum"
+        },
+        "applicableForTrafficDirection": {
+          "title": "applicableForTrafficDirection",
+          "description": "The ultimate traffic direction to which the network management is applicable.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_DirectionEnum"
+          },
+          "minItems": 0
+        },
+        "applicableForTrafficType": {
+          "title": "applicableForTrafficType",
+          "description": "The type of traffic to which the network management is applicable.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficTypeEnum"
+          },
+          "minItems": 0
+        },
+        "placesAtWhichApplicable": {
+          "title": "placesAtWhichApplicable",
+          "description": "Places, in generic terms, at which the network management applies.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PlacesEnum"
+          },
+          "minItems": 0
+        },
+        "automaticallyInitiated": {
+          "title": "automaticallyInitiated",
+          "description": "Defines whether the network management is initiated by an automatic system.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "forVehiclesWithCharacteristicsOf": {
+          "title": "forVehiclesWithCharacteristicsOf",
+          "description": "The characteristics of those vehicles for which the network management is applicable.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/VehicleCharacteristics"
+          },
+          "minItems": 0
+        },
+        "_networkManagementExtension": {
+          "title": "_networkManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "complianceOption"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "NonWeatherRelatedRoadConditions": {
+      "title": "NonWeatherRelatedRoadConditions",
+      "description": "Road surface conditions that are not related to the weather but which may affect driving conditions.",
+      "type": "object",
+      "properties": {
+        "nonWeatherRelatedRoadConditionType": {
+          "title": "nonWeatherRelatedRoadConditionType",
+          "description": "The type of road conditions which are not related to the weather.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_NonWeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_nonWeatherRelatedRoadConditionsExtension": {
+          "title": "_nonWeatherRelatedRoadConditionsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "nonWeatherRelatedRoadConditionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadSurfaceConditions"
+        }
+      ]
+    },
+    "NonWeatherRelatedRoadConditionTypeEnum": {
+      "title": "NonWeatherRelatedRoadConditionTypeEnum",
+      "description": "Types of road surface conditions which are not related to the weather.",
+      "type": "string",
+      "enum": [
+        "dieselOnRoad",
+        "leavesOnRoad",
+        "looseChippings",
+        "looseSandOnRoad",
+        "mudOnRoad",
+        "oilOnRoad",
+        "petrolOnRoad",
+        "roadMarkingNotPresent",
+        "roadSurfaceInPoorCondition",
+        "slipperyRoad",
+        "other",
+        "_extended"
+      ]
+    },
+    "Obstruction": {
+      "title": "Obstruction",
+      "description": "Any stationary or moving obstacle of a physical nature (e.g. obstacles or vehicles from an earlier accident, shed loads on carriageway, rock fall, abnormal or dangerous loads, or animals etc.) which could disrupt or endanger traffic.",
+      "type": "object",
+      "properties": {
+        "numberOfObstructions": {
+          "title": "numberOfObstructions",
+          "description": "The number of obstructions that are partly or wholly blocking the road.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "mobilityOfObstruction": {
+          "title": "mobilityOfObstruction",
+          "description": "The mobility of the obstruction.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "_obstructionExtension": {
+          "title": "_obstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/TrafficElement"
+        }
+      ]
+    },
+    "ObstructionTypeEnum": {
+      "title": "ObstructionTypeEnum",
+      "description": "Types of obstructions on the roadway.",
+      "type": "string",
+      "enum": [
+        "airCrash",
+        "childrenOnRoadway",
+        "clearanceWork",
+        "craneOperating",
+        "cyclistsOnRoadway",
+        "debris",
+        "explosion",
+        "explosionHazard",
+        "hazardsOnTheRoad",
+        "incident",
+        "industrialAccident",
+        "objectOnTheRoad",
+        "objectsFallingFromMovingVehicle",
+        "obstructionOnTheRoad",
+        "peopleOnRoadway",
+        "railCrash",
+        "rescueAndRecoveryWork",
+        "severeFrostDamagedRoadway",
+        "shedLoad",
+        "snowAndIceDebris",
+        "spillageOccurringFromMovingVehicle",
+        "spillageOnTheRoad",
+        "unprotectedAccidentArea",
+        "other",
+        "_extended"
+      ]
+    },
+    "OperatorAction": {
+      "title": "OperatorAction",
+      "description": "Actions that an authorised operator can decide to implement to prevent or help correct dangerous or poor driving conditions, or any actions affecting normal operation of a road.",
+      "type": "object",
+      "properties": {
+        "actionOrigin": {
+          "title": "actionOrigin",
+          "description": "Indicates whether the actions to be undertaken by the operator are the result of an internal operation or external influence.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_OperatorActionOriginEnum"
+        },
+        "actionPlanIdentifier": {
+          "title": "actionPlanIdentifier",
+          "description": "The identifier of the traffic management action plan to which this action relates.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "operatorActionStatus": {
+          "title": "operatorActionStatus",
+          "description": "The status of the defined operator action.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_OperatorActionStatusEnum"
+        },
+        "_operatorActionExtension": {
+          "title": "_operatorActionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "OperatorActionOriginEnum": {
+      "title": "OperatorActionOriginEnum",
+      "description": "Origins of operator actions.",
+      "type": "string",
+      "enum": [
+        "external",
+        "internal",
+        "_extended"
+      ]
+    },
+    "OperatorActionStatusEnum": {
+      "title": "OperatorActionStatusEnum",
+      "description": "List of statuses associated with operator actions.",
+      "type": "string",
+      "enum": [
+        "requested",
+        "approved",
+        "beingImplemented",
+        "implemented",
+        "rejected",
+        "terminationRequested",
+        "beingTerminated",
+        "_extended"
+      ]
+    },
+    "PersonCategoryEnum": {
+      "title": "PersonCategoryEnum",
+      "description": "Categories of person.",
+      "type": "string",
+      "enum": [
+        "adult",
+        "child",
+        "emergencyServicesPerson",
+        "fireman",
+        "infant",
+        "medicalStaff",
+        "memberOfThePublic",
+        "policeman",
+        "politician",
+        "publicTransportPassenger",
+        "sickPerson",
+        "trafficOfficer",
+        "trafficWarden",
+        "veryImportantPerson",
+        "_extended"
+      ]
+    },
+    "PlacesEnum": {
+      "title": "PlacesEnum",
+      "description": "List of types of places.",
+      "type": "string",
+      "enum": [
+        "aroundBendsInTheRoad",
+        "atCustomsPosts",
+        "atHighAltitudes",
+        "atRestAreas",
+        "atServiceAreas",
+        "atTollPlazas",
+        "inBuiltUpAreas",
+        "inContraflowSections",
+        "inForestedAreas",
+        "inGalleries",
+        "inLowLyingAreas",
+        "inRoadworksAreas",
+        "inRuralAreas",
+        "inShadedAreas",
+        "inTheInnerCityAreas",
+        "inTheCityCentre",
+        "inTunnels",
+        "onBridges",
+        "onDownHillSections",
+        "onDualCarriagewaySections",
+        "onElevatedSections",
+        "onEnteringOrLeavingTunnels",
+        "onEnteringTheCountry",
+        "onFlyovers",
+        "onLeavingTheCountry",
+        "onMotorways",
+        "onNonMotorways",
+        "onPasses",
+        "onRoundabouts",
+        "onSingleCarriagewaySections",
+        "onSlipRoads",
+        "onUndergroundSections",
+        "onUnderpasses",
+        "onUpHillSections",
+        "overTheCrestOfHills",
+        "other",
+        "_extended"
+      ]
+    },
+    "PoorEnvironmentConditions": {
+      "title": "PoorEnvironmentConditions",
+      "description": "Any environmental conditions which may be affecting the driving conditions on the road.",
+      "type": "object",
+      "properties": {
+        "poorEnvironmentType": {
+          "title": "poorEnvironmentType",
+          "description": "The type of environment condition which is affecting driving conditions.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_PoorEnvironmentTypeEnum"
+          },
+          "minItems": 1
+        },
+        "precipitationDetail": {
+          "title": "precipitationDetail",
+          "$ref": "DATEXII_3_Common.json#/definitions/PrecipitationDetail"
+        },
+        "visibility": {
+          "title": "visibility",
+          "$ref": "DATEXII_3_Common.json#/definitions/Visibility"
+        },
+        "pollution": {
+          "title": "pollution",
+          "$ref": "DATEXII_3_Common.json#/definitions/Pollution"
+        },
+        "temperature": {
+          "title": "temperature",
+          "$ref": "DATEXII_3_Common.json#/definitions/Temperature"
+        },
+        "wind": {
+          "title": "wind",
+          "$ref": "DATEXII_3_Common.json#/definitions/Wind"
+        },
+        "humidity": {
+          "title": "humidity",
+          "$ref": "DATEXII_3_Common.json#/definitions/Humidity"
+        },
+        "pressure": {
+          "title": "pressure",
+          "$ref": "DATEXII_3_Common.json#/definitions/Pressure"
+        },
+        "_poorEnvironmentConditionsExtension": {
+          "title": "_poorEnvironmentConditionsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "poorEnvironmentType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        }
+      ]
+    },
+    "PoorEnvironmentTypeEnum": {
+      "title": "PoorEnvironmentTypeEnum",
+      "description": "Types of poor environmental conditions.",
+      "type": "string",
+      "enum": [
+        "badWeather",
+        "blizzard",
+        "blowingDust",
+        "blowingSnow",
+        "crosswinds",
+        "damagingHail",
+        "denseFog",
+        "eclipse",
+        "extremeCold",
+        "extremeHeat",
+        "fog",
+        "freezingFog",
+        "frost",
+        "gales",
+        "gustyWinds",
+        "hail",
+        "heavyFrost",
+        "heavyRain",
+        "heavySnowfall",
+        "hurricaneForceWinds",
+        "lowSunGlare",
+        "moderateFog",
+        "nearbyFire",
+        "nearbyFlooding",
+        "ozonePollution",
+        "pollution",
+        "patchyFog",
+        "precipitationInTheArea",
+        "rain",
+        "rainChangingToSnow",
+        "sandStorms",
+        "severeExhaustPollution",
+        "severeSmog",
+        "showers",
+        "sleet",
+        "smogAlert",
+        "smokeHazard",
+        "snowChangingToRain",
+        "snowfall",
+        "sprayHazard",
+        "stormForceWinds",
+        "strongGustsOfWind",
+        "strongWinds",
+        "swarmsOfInsects",
+        "temperatureFalling",
+        "thunderstorms",
+        "tornadoes",
+        "veryStrongGustsOfWind",
+        "visibilityReduced",
+        "whiteOut",
+        "winterStorm",
+        "_extended"
+      ]
+    },
+    "ProbabilityOfOccurrenceEnum": {
+      "title": "ProbabilityOfOccurrenceEnum",
+      "description": "Levels of confidence that the sender has in the information, ordered {certain, probable, risk of}.",
+      "type": "string",
+      "enum": [
+        "certain",
+        "probable",
+        "riskOf",
+        "_extended"
+      ]
+    },
+    "PublicEvent": {
+      "title": "PublicEvent",
+      "description": "Organised public event which could disrupt traffic.",
+      "type": "object",
+      "properties": {
+        "publicEventType": {
+          "title": "publicEventType",
+          "description": "Type of public event which could disrupt traffic.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_PublicEventTypeEnum"
+        },
+        "venueName": {
+          "title": "venueName",
+          "description": "Name of the venue at which the public event is being held",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_publicEventExtension": {
+          "title": "_publicEventExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "publicEventType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Activity"
+        }
+      ]
+    },
+    "RelativeTrafficFlowEnum": {
+      "title": "RelativeTrafficFlowEnum",
+      "description": "Levels of assessment of the traffic flow conditions relative to normally expected conditions at this date/time.",
+      "type": "string",
+      "enum": [
+        "trafficVeryMuchHeavierThanNormal",
+        "trafficHeavierThanNormal",
+        "trafficFlowNormal",
+        "trafficLighterThanNormal",
+        "trafficVeryMuchLighterThanNormal",
+        "_extended"
+      ]
+    },
+    "ReroutingManagement": {
+      "title": "ReroutingManagement",
+      "description": "Rerouting management action that is issued by the network/road operator.",
+      "type": "object",
+      "properties": {
+        "reroutingManagementType": {
+          "title": "reroutingManagementType",
+          "description": "Type of rerouting management action instigated by operator.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ReroutingManagementTypeEnum"
+          },
+          "minItems": 1
+        },
+        "reroutingItineraryDescription": {
+          "title": "reroutingItineraryDescription",
+          "description": "A description of the rerouting itinerary.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "signedRerouting": {
+          "title": "signedRerouting",
+          "description": "Indication of whether the rerouting is signed.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "alternativeRouteIdentifier": {
+          "title": "alternativeRouteIdentifier",
+          "description": "Identity used on signs to identify the alternative route, typically a very short sequence of letters and/or digits",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "entry": {
+          "title": "entry",
+          "description": "The specified entry on to another road at which the alternative route commences.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "exit": {
+          "title": "exit",
+          "description": "The specified exit from the normal route/road at which the alternative route commences.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "roadOrJunctionNumber": {
+          "title": "roadOrJunctionNumber",
+          "description": "The intersecting road or the junction at which the alternative route commences.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "alternativeRoute": {
+          "title": "alternativeRoute",
+          "description": "The definition of the alternative route (rerouting) specified as an ordered set of locations (itinerary) which may be specific to one or more defined destinations.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Itinerary"
+          },
+          "minItems": 0
+        },
+        "destination": {
+          "title": "destination",
+          "description": "The destination of the rerouting. Use this direct property when there is no detailed Itinerary available.",
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Destination"
+        },
+        "_reroutingManagementExtension": {
+          "title": "_reroutingManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "reroutingManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "ReroutingManagementTypeEnum": {
+      "title": "ReroutingManagementTypeEnum",
+      "description": "Management actions relating to rerouting.",
+      "type": "string",
+      "enum": [
+        "doNotFollowDiversionSigns",
+        "doNotUseEntry",
+        "doNotUseExit",
+        "doNotUseIntersectionOrJunction",
+        "followDiversionSigns",
+        "followLocalDiversion",
+        "followSpecialMarkers",
+        "useEntry",
+        "useExit",
+        "useIntersectionOrJunction",
+        "_extended"
+      ]
+    },
+    "RoadMaintenanceTypeEnum": {
+      "title": "RoadMaintenanceTypeEnum",
+      "description": "Types of road maintenance.",
+      "type": "string",
+      "enum": [
+        "accidentRepairWork",
+        "clearanceWork",
+        "controlledAvalanche",
+        "installationWork",
+        "grassCuttingWork",
+        "litterClearance",
+        "maintenanceWork",
+        "maintenancePeopleOnRoad",
+        "overheadWorks",
+        "repairWork",
+        "resurfacingWork",
+        "roadMarkingWork",
+        "roadsideWork",
+        "roadworksClearance",
+        "roadworks",
+        "rockFallPreventativeMaintenance",
+        "saltingInProgress",
+        "snowploughsInUse",
+        "sweepingOfRoad",
+        "treeAndVegetationCuttingWork",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadOperatorServiceDisruption": {
+      "title": "RoadOperatorServiceDisruption",
+      "description": "Details of disruption to normal road operator services",
+      "type": "object",
+      "properties": {
+        "roadOperatorServiceDisruptionType": {
+          "title": "roadOperatorServiceDisruptionType",
+          "description": "The type of road operator service which is disrupted.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOperatorServiceDisruptionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_roadOperatorServiceDisruptionExtension": {
+          "title": "_roadOperatorServiceDisruptionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadOperatorServiceDisruptionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "RoadOperatorServiceDisruptionTypeEnum": {
+      "title": "RoadOperatorServiceDisruptionTypeEnum",
+      "description": "Types of disruption to road operator services relevant to road users.",
+      "type": "string",
+      "enum": [
+        "emergencyTelephoneNumberOutOfService",
+        "informationServiceTelephoneNumberOutOfService",
+        "noTrafficOfficerPatrolService",
+        "_extended"
+      ]
+    },
+    "RoadOrCarriagewayOrLaneManagement": {
+      "title": "RoadOrCarriagewayOrLaneManagement",
+      "description": "Road, carriageway or lane management action that is instigated by the network/road operator.",
+      "type": "object",
+      "properties": {
+        "roadOrCarriagewayOrLaneManagementType": {
+          "title": "roadOrCarriagewayOrLaneManagementType",
+          "description": "Type of road, carriageway or lane management action instigated by operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadOrCarriagewayOrLaneManagementTypeEnum"
+        },
+        "minimumCarOccupancy": {
+          "title": "minimumCarOccupancy",
+          "description": "The minimum number of persons required in a vehicle in order for it to be allowed to transit the specified road section.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_roadOrCarriagewayOrLaneManagementExtension": {
+          "title": "_roadOrCarriagewayOrLaneManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadOrCarriagewayOrLaneManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "RoadOrCarriagewayOrLaneManagementTypeEnum": {
+      "title": "RoadOrCarriagewayOrLaneManagementTypeEnum",
+      "description": "Management actions relating to road, carriageway or lane usage.",
+      "type": "string",
+      "enum": [
+        "carPoolLaneInOperation",
+        "carriagewayClosures",
+        "clearALaneForEmergencyVehicles",
+        "clearALaneForSnowploughsAndGrittingVehicles",
+        "closedPermanentlyForTheWinter",
+        "contraflow",
+        "doNotUseSpecifiedLanesOrCarriageways",
+        "hardShoulderRunningInOperation",
+        "hardShoulderRunningNotInOperation",
+        "heightRestrictionInOperation",
+        "intermittentShortTermClosures",
+        "keepToTheLeft",
+        "keepToTheRight",
+        "laneClosures",
+        "lanesDeviated",
+        "narrowLanes",
+        "newRoadworksLayout",
+        "overnightClosures",
+        "roadCleared",
+        "roadClosed",
+        "rollingRoadBlock",
+        "rushHourLaneInOperation",
+        "singleAlternateLineTraffic",
+        "tidalFlowLaneInOperation",
+        "turnAroundInOperation",
+        "useOfSpecifiedLanesOrCarriagewaysAllowed",
+        "useSpecifiedLanesOrCarriageways",
+        "vehicleStorageInOperation",
+        "weightRestrictionInOperation",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadsideAssistance": {
+      "title": "RoadsideAssistance",
+      "description": "Details of road side assistance required or being given.",
+      "type": "object",
+      "properties": {
+        "roadsideAssistanceType": {
+          "title": "roadsideAssistanceType",
+          "description": "Indicates the nature of the road side assistance that will be, is or has been provided.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadsideAssistanceTypeEnum"
+        },
+        "_roadsideAssistanceExtension": {
+          "title": "_roadsideAssistanceExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "roadsideAssistanceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "RoadsideAssistanceTypeEnum": {
+      "title": "RoadsideAssistanceTypeEnum",
+      "description": "Types of road side assistance.",
+      "type": "string",
+      "enum": [
+        "airAmbulance",
+        "busPassengerAssistance",
+        "emergencyServices",
+        "firstAid",
+        "foodDelivery",
+        "helicopterRescue",
+        "vehicleRepair",
+        "vehicleRecovery",
+        "other",
+        "_extended"
+      ]
+    },
+    "RoadSurfaceConditions": {
+      "title": "RoadSurfaceConditions",
+      "description": "Conditions of the road surface which may affect driving conditions. These may be related to the weather (e.g. ice, snow etc.) or to other conditions (e.g. oil, mud, leaves etc. on the road)",
+      "type": "object",
+      "properties": {
+        "_roadSurfaceConditionsExtension": {
+          "title": "_roadSurfaceConditionsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Conditions"
+        }
+      ]
+    },
+    "Roadworks": {
+      "title": "Roadworks",
+      "description": "Road maintenance, installation and construction activities, works in the road, or other construction or maintenance actions that may affect normal operation of a road.",
+      "type": "object",
+      "properties": {
+        "publicTransportAlternative": {
+          "title": "publicTransportAlternative",
+          "description": "Describes an available public transport alternative to the normal route",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "roadworksDurationClassification": {
+          "title": "roadworksDurationClassification",
+          "description": "Indicates in general terms the expected duration of the roadworks.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadworksDurationEnum"
+        },
+        "roadworksIdentifier": {
+          "title": "roadworksIdentifier",
+          "description": "An external identifier for the roadworks",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "roadworksScale": {
+          "title": "roadworksScale",
+          "description": "Grade of complexity of the roadworks according to the responsible road operator. For example determined by size, duration and/or traffic disruption.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_RoadworksScaleEnum"
+        },
+        "underTraffic": {
+          "title": "underTraffic",
+          "description": "Indicates that the road section where the roadworks are located is under traffic or not under traffic. 'True' indicates the road is under traffic.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "urgentRoadworks": {
+          "title": "urgentRoadworks",
+          "description": "Indication of whether the roadworks are considered to be urgent whereby emergency work is being, or needs to be, undertaken to mitigate safety concerns. 'True' indicates they are urgent.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "mobility": {
+          "title": "mobility",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Mobility"
+        },
+        "subjects": {
+          "title": "subjects",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Subjects"
+        },
+        "maintenanceVehicles": {
+          "title": "maintenanceVehicles",
+          "$ref": "DATEXII_3_Situation.json#/definitions/MaintenanceVehicles"
+        },
+        "_roadworksExtension": {
+          "title": "_roadworksExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/OperatorAction"
+        }
+      ]
+    },
+    "RoadworksDurationEnum": {
+      "title": "RoadworksDurationEnum",
+      "description": "Expected durations of roadworks in general terms.",
+      "type": "string",
+      "enum": [
+        "longTerm",
+        "mediumTerm",
+        "shortTerm",
+        "_extended"
+      ]
+    },
+    "RoadworksScaleEnum": {
+      "title": "RoadworksScaleEnum",
+      "description": "Grade of complexity of the roadworks according to the responsible road operator. For example determined by size, duration and/or traffic disruption.",
+      "type": "string",
+      "enum": [
+        "major",
+        "medium",
+        "minor",
+        "_extended"
+      ]
+    },
+    "ServiceDisruption": {
+      "title": "ServiceDisruption",
+      "description": "Details of disruption to normal services which may include roadside services such as those available at designated service areas, or any other relevant services such as nearby parking.",
+      "type": "object",
+      "properties": {
+        "serviceDisruptionType": {
+          "title": "serviceDisruptionType",
+          "description": "The type of service which is disrupted.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_ServiceDisruptionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "_serviceDisruptionExtension": {
+          "title": "_serviceDisruptionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "serviceDisruptionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "ServiceDisruptionTypeEnum": {
+      "title": "ServiceDisruptionTypeEnum",
+      "description": "Types of disruption to services relevant to road users.",
+      "type": "string",
+      "enum": [
+        "barClosed",
+        "dieselShortage",
+        "fuelShortage",
+        "lpgShortage",
+        "methaneShortage",
+        "noDieselForHeavyVehicles",
+        "noDieselForLightVehicles",
+        "noParkingAvailability",
+        "noPublicTelephones",
+        "noToiletFacilities",
+        "noVehicleRepairFacilities",
+        "petrolShortage",
+        "restAreaBusy",
+        "restAreaClosed",
+        "restAreaOvercrowdedDriveToAnotherRestArea",
+        "serviceAreaBusy",
+        "serviceAreaClosed",
+        "serviceAreaFuelStationClosed",
+        "serviceAreaOvercrowdedDriveToAnotherServiceArea",
+        "serviceAreaRestaurantClosed",
+        "someCommercialServicesClosed",
+        "waterShortage",
+        "_extended"
+      ]
+    },
+    "ServiceInformation": {
+      "title": "ServiceInformation",
+      "description": "Information about a service which may influence the behaviour of drivers and hence the characteristics of the traffic flow.",
+      "type": "object",
+      "properties": {
+        "_serviceInformationExtension": {
+          "title": "_serviceInformationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "SeverityEnum": {
+      "title": "SeverityEnum",
+      "description": "Levels of severity of a situation as whole assessed by the impact that the situation may have on traffic flow as perceived by the supplier.",
+      "type": "string",
+      "enum": [
+        "highest",
+        "high",
+        "medium",
+        "low",
+        "lowest",
+        "none",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "Situation": {
+      "title": "Situation",
+      "description": "An identifiable instance of a traffic/travel situation comprising one or more traffic/travel circumstances which are linked by one or more causal relationships. Each traffic/travel circumstance is represented by a Situation Record.",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "overallSeverity": {
+          "title": "overallSeverity",
+          "description": "The overall assessment of the impact (in terms of severity) that the situation as a whole is having, or will have, on the traffic flow as perceived by the supplier.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SeverityEnum"
+        },
+        "situationVersionTime": {
+          "title": "situationVersionTime",
+          "description": "The date/time that this current version of the Situation was written into the database of the supplier which is involved in the data exchange. Identity and version of the situation are defined by the class stereotype implementation.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "headerInformation": {
+          "title": "headerInformation",
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "situationRecord": {
+          "title": "situationRecord",
+          "description": "Details of the Situation",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecord"
+          },
+          "minItems": 1
+        },
+        "relatedSituation": {
+          "title": "relatedSituation",
+          "description": "Reference to related situations via unique identifiers.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/SituationReference"
+          },
+          "minItems": 0
+        },
+        "informationManager": {
+          "title": "informationManager",
+          "description": "Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content.",
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "situationSummary": {
+          "title": "situationSummary",
+          "description": "A SituationRecord that provides a summary of the information described by the corresponding Situation, i.e. a superset of at least the location and validity information of all (other) SituationRecords in this Situation. ",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecord"
+        },
+        "_situationExtension": {
+          "title": "_situationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "headerInformation",
+        "situationRecord"
+      ]
+    },
+    "SituationPublication": {
+      "title": "SituationPublication",
+      "description": "A publication containing zero or more traffic/travel situations.",
+      "type": "object",
+      "properties": {
+        "situation": {
+          "title": "situation",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Situation"
+          },
+          "minItems": 0
+        },
+        "_situationPublicationExtension": {
+          "title": "_situationPublicationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "SituationRecord": {
+      "title": "SituationRecord",
+      "description": "An identifiable versioned instance of a single record/element within a situation.",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "situationRecordCreationReference": {
+          "title": "situationRecordCreationReference",
+          "description": "A unique alphanumeric reference (either an external reference or GUID) of the SituationRecord object (the first version of the record) that was created by the original supplier.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "situationRecordCreationTime": {
+          "title": "situationRecordCreationTime",
+          "description": "The date/time that the SituationRecord object (the first version of the record) was created by the original supplier.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordObservationTime": {
+          "title": "situationRecordObservationTime",
+          "description": "The date/time that the information represented by the current version of the SituationRecord was observed by the original (potentially external) source of the information.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordVersionTime": {
+          "title": "situationRecordVersionTime",
+          "description": "The date/time that this current version of the SituationRecord within the situation was written into the database of the supplier which is involved in the data exchange. Identity and version of record are defined by the class stereotype implementation.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "situationRecordFirstSupplierVersionTime": {
+          "title": "situationRecordFirstSupplierVersionTime",
+          "description": "The date/time that the current version of the Situation Record was written into the database of the original supplier in the supply chain.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "confidentialityOverride": {
+          "title": "confidentialityOverride",
+          "description": "The extent to which the related information may be circulated, according to the recipient type. Recipients must comply with this confidentiality statement. This overrides any confidentiality defined for the situation as a whole in the header information.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ConfidentialityValueEnum"
+        },
+        "probabilityOfOccurrence": {
+          "title": "probabilityOfOccurrence",
+          "description": "An assessment of the degree of likelihood that the reported event will occur.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_ProbabilityOfOccurrenceEnum"
+        },
+        "severity": {
+          "title": "severity",
+          "description": "The assessment of the impact (in terms of severity) that this element of the situation is having, or will have, on the traffic flow as perceived by the supplier.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SeverityEnum"
+        },
+        "safetyRelatedMessage": {
+          "title": "safetyRelatedMessage",
+          "description": "Indicates, whether this SituationRecord specifies a safety related message according to Commission Delegated Regulation (EU) No 886/2013.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "source": {
+          "title": "source",
+          "$ref": "DATEXII_3_Common.json#/definitions/Source"
+        },
+        "validity": {
+          "title": "validity",
+          "$ref": "DATEXII_3_Common.json#/definitions/Validity"
+        },
+        "impact": {
+          "title": "impact",
+          "description": "Impact of the situation element",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Impact"
+        },
+        "cause": {
+          "title": "cause",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Cause"
+        },
+        "generalPublicComment": {
+          "title": "generalPublicComment",
+          "description": "A comment which may be freely distributed to the general public",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Comment"
+          },
+          "minItems": 0
+        },
+        "nonGeneralPublicComment": {
+          "title": "nonGeneralPublicComment",
+          "description": "A comment which should not be distributed to the general public.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Situation.json#/definitions/Comment"
+          },
+          "minItems": 0
+        },
+        "urlLink": {
+          "title": "urlLink",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+          },
+          "minItems": 0
+        },
+        "locationReference": {
+          "title": "locationReference",
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_LocationReference"
+        },
+        "informationManagerOverride": {
+          "title": "informationManagerOverride",
+          "description": "Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content. This value overrides any value specified at a more general level.",
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "impactOnOppositeDirection": {
+          "title": "impactOnOppositeDirection",
+          "description": "impact of the situation element on driving conditions in the opposite direction",
+          "$ref": "DATEXII_3_Situation.json#/definitions/Impact"
+        },
+        "_situationRecordExtension": {
+          "title": "_situationRecordExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "situationRecordCreationTime",
+        "situationRecordVersionTime",
+        "probabilityOfOccurrence",
+        "validity",
+        "locationReference"
+      ]
+    },
+    "SituationRecordReference": {
+      "title": "SituationRecordReference",
+      "description": "Reference to a SituationRecord",
+      "type": "object",
+      "properties": {
+        "objectReference": {
+          "title": "objectReference",
+          "description": "A reference to a specific versioned identifiable object, which may be in this publication or an external publication",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationRecordVersionedReference"
+        },
+        "_situationRecordReferenceExtension": {
+          "title": "_situationRecordReferenceExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "objectReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "SituationReference": {
+      "title": "SituationReference",
+      "description": "Reference to a Situation",
+      "type": "object",
+      "properties": {
+        "objectReference": {
+          "title": "objectReference",
+          "description": "A reference to a specific versioned identifiable object, which may be in this publication or an external publication",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SituationVersionedReference"
+        },
+        "_situationReferenceExtension": {
+          "title": "_situationReferenceExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "objectReference"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/GlobalReference"
+        }
+      ]
+    },
+    "SpeedManagement": {
+      "title": "SpeedManagement",
+      "description": "Speed management action that is instigated by the network/road operator.",
+      "type": "object",
+      "properties": {
+        "speedManagementType": {
+          "title": "speedManagementType",
+          "description": "Type of speed management action instigated by operator.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SpeedManagementTypeEnum"
+        },
+        "temporarySpeedLimit": {
+          "title": "temporarySpeedLimit",
+          "description": "Temporary limit defining the maximum advisory or mandatory speed of vehicles.",
+          "$ref": "DATEXII_3_Common.json#/definitions/KilometresPerHour"
+        },
+        "_speedManagementExtension": {
+          "title": "_speedManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    },
+    "SpeedManagementTypeEnum": {
+      "title": "SpeedManagementTypeEnum",
+      "description": "Management actions relating to speed.",
+      "type": "string",
+      "enum": [
+        "activeSpeedControlInOperation",
+        "doNotSlowdownUnnecessarily",
+        "observeSpeedLimit",
+        "policeSpeedChecksInOperation",
+        "reduceYourSpeed",
+        "speedRestrictionInOperation",
+        "other",
+        "_extended"
+      ]
+    },
+    "Subjects": {
+      "title": "Subjects",
+      "description": "The subjects with which the roadworks are associated.",
+      "type": "object",
+      "properties": {
+        "subjectTypeOfWorks": {
+          "title": "subjectTypeOfWorks",
+          "description": "The subject type of the roadworks (i.e. on what the construction or maintenance work is being performed).",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_SubjectTypeOfWorksEnum"
+        },
+        "numberOfSubjects": {
+          "title": "numberOfSubjects",
+          "description": "The number of subjects on which the roadworks (construction or maintenance) are being performed.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_subjectsExtension": {
+          "title": "_subjectsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "subjectTypeOfWorks"
+      ]
+    },
+    "SubjectTypeOfWorksEnum": {
+      "title": "SubjectTypeOfWorksEnum",
+      "description": "Subject types of construction or maintenance work.",
+      "type": "string",
+      "enum": [
+        "bridge",
+        "buriedCables",
+        "buriedServices",
+        "crashBarrier",
+        "cycleTrack",
+        "footpath",
+        "gallery",
+        "gantry",
+        "gasMainWork",
+        "heatingPipe",
+        "interchange",
+        "junction",
+        "levelCrossing",
+        "lightingSystem",
+        "lock",
+        "measurementEquipment",
+        "metro",
+        "noiseProtection",
+        "parking",
+        "publicTransportInfrastructure",
+        "publicTransportStop",
+        "road",
+        "roadSigns",
+        "roadsideDrains",
+        "roadsideEmbankment",
+        "roadsideEquipment",
+        "roundabout",
+        "sewer",
+        "streetParking",
+        "tollGate",
+        "trafficSignals",
+        "tunnel",
+        "waterBank",
+        "waterMain",
+        "other",
+        "_extended"
+      ]
+    },
+    "TrafficConstrictionTypeEnum": {
+      "title": "TrafficConstrictionTypeEnum",
+      "description": "Types of constriction to which traffic is subjected as a result of an event.",
+      "type": "string",
+      "enum": [
+        "carriagewayBlocked",
+        "carriagewayPartiallyObstructed",
+        "lanesBlocked",
+        "lanesPartiallyObstructed",
+        "roadBlocked",
+        "roadPartiallyObstructed",
+        "_extended"
+      ]
+    },
+    "TrafficElement": {
+      "title": "TrafficElement",
+      "description": "An event which is not planned by the traffic operator, which is affecting, or has the potential to affect traffic flow.",
+      "type": "object",
+      "properties": {
+        "trafficConstrictionType": {
+          "title": "trafficConstrictionType",
+          "description": "The type of constriction to which traffic is subjected as a result of an unplanned event",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TrafficConstrictionTypeEnum"
+        },
+        "_trafficElementExtension": {
+          "title": "_trafficElementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/SituationRecord"
+        }
+      ]
+    },
+    "TrafficFlowCharacteristicsEnum": {
+      "title": "TrafficFlowCharacteristicsEnum",
+      "description": "Types of consistency (steadiness) of traffic flow.",
+      "type": "string",
+      "enum": [
+        "erraticFlow",
+        "smoothFlow",
+        "stopAndGo",
+        "trafficBlocked",
+        "_extended"
+      ]
+    },
+    "TrafficTypeEnum": {
+      "title": "TrafficTypeEnum",
+      "description": "Types of traffic, mostly classified by its destination type.",
+      "type": "string",
+      "enum": [
+        "accessOnlyTraffic",
+        "destinedForAirport",
+        "destinedForAirportArrivals",
+        "destinedForAirportDepartures",
+        "destinedForFerryService",
+        "destinedForRailService",
+        "holidayTraffic",
+        "localTraffic",
+        "longDistanceTraffic",
+        "regionalTraffic",
+        "residentsOnlyTraffic",
+        "throughTraffic",
+        "visitorTraffic",
+        "_extended"
+      ]
+    },
+    "TransitInformation": {
+      "title": "TransitInformation",
+      "description": "The availability of transit services and information relating to their departures. This is limited to those transit services which are of direct relevance to road users, e.g. connecting rail or ferry services.",
+      "type": "object",
+      "properties": {
+        "journeyDestination": {
+          "title": "journeyDestination",
+          "description": "Indicates the stated termination point of the transit journey.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "journeyOrigin": {
+          "title": "journeyOrigin",
+          "description": "Indicates the stated starting point of the transit journey.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "journeyReference": {
+          "title": "journeyReference",
+          "description": "Indicates a transit service journey number.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "transitServiceInformation": {
+          "title": "transitServiceInformation",
+          "description": "Information about transit services.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceInformationEnum"
+        },
+        "transitServiceType": {
+          "title": "transitServiceType",
+          "description": "The type of transit service to which the information relates.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_TransitServiceTypeEnum"
+        },
+        "scheduledDepartureTime": {
+          "title": "scheduledDepartureTime",
+          "description": "Indicates the timetabled departure time of a transit service for a specified location.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "_transitInformationExtension": {
+          "title": "_transitInformationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "transitServiceInformation",
+        "transitServiceType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/ServiceInformation"
+        }
+      ]
+    },
+    "TransitServiceInformationEnum": {
+      "title": "TransitServiceInformationEnum",
+      "description": "Types of public transport information.",
+      "type": "string",
+      "enum": [
+        "cancellations",
+        "delayDueToBadWeather",
+        "delayDueToRepairs",
+        "delayedUntilFurtherNotice",
+        "delaysDueToFlotsam",
+        "departureOnSchedule",
+        "ferryReplacedByIceRoad",
+        "freeShuttleServiceOperating",
+        "informationServiceNotAvailable",
+        "irregularServiceDelays",
+        "loadCapacityChanged",
+        "restrictionsForLongerVehicles",
+        "serviceDelays",
+        "serviceDelaysOfUncertainDuration",
+        "serviceFullyBooked",
+        "serviceNotOperating",
+        "serviceNotOperatingSubstituteServiceAvailable",
+        "serviceSuspended",
+        "serviceWithdrawn",
+        "shuttleServiceOperating",
+        "temporaryChangesToTimetables",
+        "other",
+        "_extended"
+      ]
+    },
+    "TransitServiceTypeEnum": {
+      "title": "TransitServiceTypeEnum",
+      "description": "Types of transport services available to the general public.",
+      "type": "string",
+      "enum": [
+        "air",
+        "bus",
+        "ferry",
+        "hydrofoil",
+        "rail",
+        "tram",
+        "undergroundMetro",
+        "_extended"
+      ]
+    },
+    "VehicleObstruction": {
+      "title": "VehicleObstruction",
+      "description": "An obstruction on the road caused by one or more vehicles.",
+      "type": "object",
+      "properties": {
+        "vehicleObstructionType": {
+          "title": "vehicleObstructionType",
+          "description": "Characterization of an obstruction on the road caused by one or more vehicles.",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleObstructionTypeEnum"
+        },
+        "involvedVehicleType": {
+          "title": "involvedVehicleType",
+          "description": "Type of vehicle involved",
+          "$ref": "DATEXII_3_Common.json#/definitions/_VehicleTypeEnum"
+        },
+        "vehicleProblemCause": {
+          "title": "vehicleProblemCause",
+          "description": "The component of the vehicle that has the problem",
+          "$ref": "DATEXII_3_Situation.json#/definitions/_VehicleProblemCauseEnum"
+        },
+        "obstructingVehicle": {
+          "title": "obstructingVehicle",
+          "description": "The obstructing vehicle.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/Vehicle"
+          },
+          "minItems": 0
+        },
+        "_vehicleObstructionExtension": {
+          "title": "_vehicleObstructionExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vehicleObstructionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/Obstruction"
+        }
+      ]
+    },
+    "VehicleObstructionTypeEnum": {
+      "title": "VehicleObstructionTypeEnum",
+      "description": "Types of obstructions involving vehicles.",
+      "type": "string",
+      "enum": [
+        "abandonedVehicle",
+        "abnormalLoad",
+        "brokenDownVehicle",
+        "convoy",
+        "damagedVehicle",
+        "dangerousSlowMovingVehicle",
+        "emergencyVehicle",
+        "highSpeedEmergencyVehicle",
+        "longLoad",
+        "highSpeedChase",
+        "medicalEmergency",
+        "militaryConvoy",
+        "overheightVehicle",
+        "prohibitedVehicleOnTheRoad",
+        "recklessDriver",
+        "slowVehicle",
+        "specialPermitTransport",
+        "trackedVehicle",
+        "unlitVehicleOnTheRoad",
+        "vehicleOnFire",
+        "vehicleCarryingHazardousMaterials",
+        "vehicleInDifficulty",
+        "vehicleOnWrongCarriageway",
+        "vehicleStuck",
+        "vehicleWithOverheightLoad",
+        "vehicleWithOverwideLoad",
+        "winterMaintetanceVehicleInTransfer",
+        "other",
+        "_extended"
+      ]
+    },
+    "VehicleProblemCauseEnum": {
+      "title": "VehicleProblemCauseEnum",
+      "description": "The component of the vehicle that has caused a problem",
+      "type": "string",
+      "enum": [
+        "airSystem",
+        "battery",
+        "brakingSystem",
+        "coolingSystem",
+        "decoupledTrailer",
+        "diverProblem",
+        "electricalSystem",
+        "flatTyre",
+        "fuelSystem",
+        "gear",
+        "loadProblem",
+        "lostWheel",
+        "motorMechanics",
+        "oilLeakage",
+        "suspension",
+        "other",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "WeatherRelatedRoadConditions": {
+      "title": "WeatherRelatedRoadConditions",
+      "description": "Road surface conditions that are related to the weather which may affect the driving conditions, such as ice, snow or water.",
+      "type": "object",
+      "properties": {
+        "weatherRelatedRoadConditionType": {
+          "title": "weatherRelatedRoadConditionType",
+          "description": "The type of road surface condition that is related to the weather which is affecting the driving conditions.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Common.json#/definitions/_WeatherRelatedRoadConditionTypeEnum"
+          },
+          "minItems": 1
+        },
+        "roadSurfaceConditionMeasurements": {
+          "title": "roadSurfaceConditionMeasurements",
+          "$ref": "DATEXII_3_Common.json#/definitions/RoadSurfaceConditionMeasurements"
+        },
+        "_weatherRelatedRoadConditionsExtension": {
+          "title": "_weatherRelatedRoadConditionsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "weatherRelatedRoadConditionType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/RoadSurfaceConditions"
+        }
+      ]
+    },
+    "WinterDrivingManagement": {
+      "title": "WinterDrivingManagement",
+      "description": "Winter driving management action that is instigated by the network/road operator.",
+      "type": "object",
+      "properties": {
+        "winterEquipmentManagementType": {
+          "title": "winterEquipmentManagementType",
+          "description": "Type of winter equipment management action instigated by operator.",
+          "$ref": "DATEXII_3_Common.json#/definitions/_WinterEquipmentManagementTypeEnum"
+        },
+        "_winterDrivingManagementExtension": {
+          "title": "_winterDrivingManagementExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "winterEquipmentManagementType"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Situation.json#/definitions/NetworkManagement"
+        }
+      ]
+    }
+  }
+}

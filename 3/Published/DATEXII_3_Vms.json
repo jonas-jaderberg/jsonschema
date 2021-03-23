@@ -1,0 +1,2251 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "definitions": {
+    "_ColourEnum": {
+      "title": "_ColourEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ColourEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_CompositePictogramEnum": {
+      "title": "_CompositePictogramEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/CompositePictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DedicatedUsageEnum": {
+      "title": "_DedicatedUsageEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DedicatedUsageEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_DisplayArea": {
+      "title": "_DisplayArea",
+      "type": "object",
+      "properties": {
+        "supplementaryPanelArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPanelArea"
+        },
+        "pictogramDisplayArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramDisplayArea"
+        },
+        "textDisplayArea": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextDisplayArea"
+        }
+      }
+    },
+    "_DisplayAreaSettings": {
+      "title": "_DisplayAreaSettings",
+      "type": "object",
+      "properties": {
+        "textDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextDisplay"
+        },
+        "supplementaryPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPictogram"
+        },
+        "supplementaryText": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryText"
+        },
+        "pictogramDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramDisplay"
+        },
+        "multiPageDisplay": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/MultiPageDisplay"
+        }
+      }
+    },
+    "_DisplayedNumericalInformationTypeEnum": {
+      "title": "_DisplayedNumericalInformationTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayedNumericalInformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_GddServiceCategoryEnum": {
+      "title": "_GddServiceCategoryEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddServiceCategoryEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_ImageFormatEnum": {
+      "title": "_ImageFormatEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/ImageFormatEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_InformationTypeEnum": {
+      "title": "_InformationTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/InformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MessageInformationTypeEnum": {
+      "title": "_MessageInformationTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/MessageInformationTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_MultiPageDisplayPageNumberDisplayAreaSettings": {
+      "title": "_MultiPageDisplayPageNumberDisplayAreaSettings",
+      "type": "object",
+      "properties": {
+        "displayAreaSettings": {
+          "title": "displayAreaSettings",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayAreaSettings"
+        },
+        "pageNumber": {
+          "title": "pageNumber",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayAreaSettings",
+        "pageNumber"
+      ]
+    },
+    "_PhysicalSupportEnum": {
+      "title": "_PhysicalSupportEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PhysicalSupportEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_Pictogram": {
+      "title": "_Pictogram",
+      "type": "object",
+      "properties": {
+        "compositePictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/CompositePictogram"
+        },
+        "regularPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/RegularPictogram"
+        }
+      }
+    },
+    "_PictogramEnum": {
+      "title": "_PictogramEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionXAbsoluteEnum": {
+      "title": "_PositionXAbsoluteEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionXAbsoluteEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionXRelativeEnum": {
+      "title": "_PositionXRelativeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionXRelativeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionYAbsoluteEnum": {
+      "title": "_PositionYAbsoluteEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionYAbsoluteEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_PositionYRelativeEnum": {
+      "title": "_PositionYRelativeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/PositionYRelativeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SettingReasonEnum": {
+      "title": "_SettingReasonEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SettingReasonEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SituationRecordVersionedReference": {
+      "title": "_SituationRecordVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "SituationRecord"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SituationVersionedReference": {
+      "title": "_SituationVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "Situation"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_SupplementalPictogramEnum": {
+      "title": "_SupplementalPictogramEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementalPictogramEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_SupplementaryInformationDisplay": {
+      "title": "_SupplementaryInformationDisplay",
+      "type": "object",
+      "properties": {
+        "supplementaryPictogram": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryPictogram"
+        },
+        "supplementaryText": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryText"
+        }
+      }
+    },
+    "_TextDisplayLineIndexTextLine": {
+      "title": "_TextDisplayLineIndexTextLine",
+      "type": "object",
+      "properties": {
+        "textLine": {
+          "title": "textLine",
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextLine"
+        },
+        "lineIndex": {
+          "title": "lineIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "textLine",
+        "lineIndex"
+      ]
+    },
+    "_UnitOfMeasureEnum": {
+      "title": "_UnitOfMeasureEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/UnitOfMeasureEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsConfigurationDisplayAreaIndexDisplayArea": {
+      "title": "_VmsConfigurationDisplayAreaIndexDisplayArea",
+      "type": "object",
+      "properties": {
+        "displayArea": {
+          "title": "displayArea",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayArea"
+        },
+        "displayAreaIndex": {
+          "title": "displayAreaIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayArea",
+        "displayAreaIndex"
+      ]
+    },
+    "_VmsControllerFaultEnum": {
+      "title": "_VmsControllerFaultEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsControllerStatusVmsIndexVmsStatus": {
+      "title": "_VmsControllerStatusVmsIndexVmsStatus",
+      "type": "object",
+      "properties": {
+        "vmsStatus": {
+          "title": "vmsStatus",
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsStatus"
+        },
+        "vmsIndex": {
+          "title": "vmsIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vmsStatus",
+        "vmsIndex"
+      ]
+    },
+    "_VmsControllerTableVersionedReference": {
+      "title": "_VmsControllerTableVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsControllerTable"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_VmsControllerVersionedReference": {
+      "title": "_VmsControllerVersionedReference",
+      "type": "object",
+      "properties": {
+        "targetClass": {
+          "type": "string",
+          "default": "VmsController"
+        }
+      },
+      "required": [
+        "targetClass"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/VersionedReference"
+        }
+      ]
+    },
+    "_VmsControllerVmsIndexVms": {
+      "title": "_VmsControllerVmsIndexVms",
+      "type": "object",
+      "properties": {
+        "vms": {
+          "title": "vms",
+          "$ref": "DATEXII_3_Vms.json#/definitions/Vms"
+        },
+        "vmsIndex": {
+          "title": "vmsIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vms",
+        "vmsIndex"
+      ]
+    },
+    "_VmsFaultEnum": {
+      "title": "_VmsFaultEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsFaultEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_VmsMessageDisplayAreaIndexDisplayAreaSettings": {
+      "title": "_VmsMessageDisplayAreaIndexDisplayAreaSettings",
+      "type": "object",
+      "properties": {
+        "displayAreaSettings": {
+          "title": "displayAreaSettings",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayAreaSettings"
+        },
+        "displayAreaIndex": {
+          "title": "displayAreaIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "displayAreaSettings",
+        "displayAreaIndex"
+      ]
+    },
+    "_VmsStatusMessageIndexVmsMessage": {
+      "title": "_VmsStatusMessageIndexVmsMessage",
+      "type": "object",
+      "properties": {
+        "vmsMessage": {
+          "title": "vmsMessage",
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsMessage"
+        },
+        "messageIndex": {
+          "title": "messageIndex",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "vmsMessage",
+        "messageIndex"
+      ]
+    },
+    "_VmsTypeEnum": {
+      "title": "_VmsTypeEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsTypeEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "_WorkingStatusEnum": {
+      "title": "_WorkingStatusEnum",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "value": {
+          "$ref": "DATEXII_3_Vms.json#/definitions/WorkingStatusEnum"
+        },
+        "_extendedValue": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "value"
+      ]
+    },
+    "ColourEnum": {
+      "title": "ColourEnum",
+      "description": "Colours.",
+      "type": "string",
+      "enum": [
+        "amber",
+        "blue",
+        "green",
+        "red",
+        "white",
+        "whiteYellow",
+        "_extended"
+      ]
+    },
+    "CompositePictogram": {
+      "title": "CompositePictogram",
+      "description": "A composite pictogram representing a diagrammatic schema in association with an embedded regular sign.",
+      "type": "object",
+      "properties": {
+        "pictogramDescription": {
+          "title": "pictogramDescription",
+          "description": "Description of the  displayed composed pictogram.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_CompositePictogramEnum"
+        },
+        "regularPictogram": {
+          "title": "regularPictogram",
+          "$ref": "DATEXII_3_Vms.json#/definitions/RegularPictogram"
+        },
+        "_compositePictogramExtension": {
+          "title": "_compositePictogramExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pictogramDescription",
+        "regularPictogram"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Pictogram"
+        }
+      ]
+    },
+    "CompositePictogramEnum": {
+      "title": "CompositePictogramEnum",
+      "description": "Identifies a pictogram used only for building a composite pictogram",
+      "type": "string",
+      "enum": [
+        "conditionOnCurrentSectionAfterNextExit",
+        "conditionAtNextExit",
+        "conditionOnCurrentSectionAfterSecondtExit",
+        "conditionAtSecondExit",
+        "restrictionOnCurrentSectionAfterNextExit",
+        "restrictionAtNextExit",
+        "restrictionOnCurrentSectionAfterSecondExit",
+        "restrictionAtSecondtExit",
+        "_extended"
+      ]
+    },
+    "DedicatedUsageEnum": {
+      "title": "DedicatedUsageEnum",
+      "description": "Type of usage for which a VMS is dedicated",
+      "type": "string",
+      "enum": [
+        "energyInformation",
+        "inspectionArea",
+        "laneControlSystem",
+        "parkingInformation",
+        "rampMetering",
+        "tunnelManagement",
+        "other",
+        "_extended"
+      ]
+    },
+    "DisplayArea": {
+      "title": "DisplayArea",
+      "description": "Configuration (static or dynamic) of a display area.",
+      "type": "object",
+      "properties": {
+        "sequencingCapable": {
+          "title": "sequencingCapable",
+          "description": "Indicates whether the display area on the VMS is capable of sequencing through multiple pages. True = capable.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "maxNumberOfSequentialPages": {
+          "title": "maxNumberOfSequentialPages",
+          "description": "Maximum number of pages which the VMS is capable of scrolling through sequentially (2 to n).",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "positionXAbsolute": {
+          "title": "positionXAbsolute",
+          "description": "The horizontal position of the area in which the pictogram is displayed, i.e. at the left, or right of the VMS display.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionXAbsoluteEnum"
+        },
+        "positionXRelativeToPrevious": {
+          "title": "positionXRelativeToPrevious",
+          "description": "The horizontal position of the area in which the pictogram is displayed relative to the previous display in the collection (e.g. to the left, to the right ....).",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionXRelativeEnum"
+        },
+        "positionYAbsolute": {
+          "title": "positionYAbsolute",
+          "description": "The vertical position of the area in which the area is displayed, i.e. at the top or bottom of the VMS display.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionYAbsoluteEnum"
+        },
+        "positionYRelativeToPrevious": {
+          "title": "positionYRelativeToPrevious",
+          "description": "The horizontal position of the area in which the pictogram is displayed relative to the previous display area in the collection (i.e.above or below).",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PositionYRelativeEnum"
+        },
+        "displayGeometry": {
+          "title": "displayGeometry",
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayGeometry"
+        },
+        "overriddenLaneAssociation": {
+          "title": "overriddenLaneAssociation",
+          "description": "The display area is associated with these lanes, which refine any location specified for the VMS",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_LocationReferencing.json#/definitions/Lane"
+          },
+          "minItems": 0
+        },
+        "_displayAreaExtension": {
+          "title": "_displayAreaExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisplayAreaSettings": {
+      "title": "DisplayAreaSettings",
+      "description": "A display of pictograms or text on one area on a VMS.",
+      "type": "object",
+      "properties": {
+        "isBlank": {
+          "title": "isBlank",
+          "description": "Identifies whether this display area is blank. The absense of this attribute has no semantics.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "legallyBinding": {
+          "title": "legallyBinding",
+          "description": "The semantics of this display are legally binding for road users",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "legalBasis": {
+          "title": "legalBasis",
+          "description": "Identies any legal basis for the elements displayed",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "_displayAreaSettingsExtension": {
+          "title": "_displayAreaSettingsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "DisplayedNumericalInformation": {
+      "title": "DisplayedNumericalInformation",
+      "description": "Numerical information displayed on a sign",
+      "type": "object",
+      "properties": {
+        "numericalInformationType": {
+          "title": "numericalInformationType",
+          "description": "Type of numerical information displayed",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DisplayedNumericalInformationTypeEnum"
+        },
+        "numericValue": {
+          "title": "numericValue",
+          "description": "The value displayed. In the special case where the unit of measure is feet and inches, the part of the number after the decimal separator is the number of inches.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Decimal"
+        },
+        "unitOfMeasure": {
+          "title": "unitOfMeasure",
+          "description": "The unit of measure for the numeric value. This may be displayed or predefined for a type of sign.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_UnitOfMeasureEnum"
+        },
+        "_displayedNumericalInformationExtension": {
+          "title": "_displayedNumericalInformationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "numericalInformationType",
+        "numericValue",
+        "unitOfMeasure"
+      ]
+    },
+    "DisplayedNumericalInformationTypeEnum": {
+      "title": "DisplayedNumericalInformationTypeEnum",
+      "description": "Type of numerical information displayed",
+      "type": "string",
+      "enum": [
+        "distance",
+        "height",
+        "length",
+        "rateOfIncline",
+        "sectionLength",
+        "speed",
+        "weight",
+        "weightPerAxle",
+        "width",
+        "_extended"
+      ]
+    },
+    "DisplayGeometry": {
+      "title": "DisplayGeometry",
+      "description": "Characteristics of the geometry of a display",
+      "type": "object",
+      "properties": {
+        "pixelsAcross": {
+          "title": "pixelsAcross",
+          "description": "Number of pixels horizontally across the display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "pixelsDown": {
+          "title": "pixelsDown",
+          "description": "Number of pixels vertically down the display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayHeight": {
+          "title": "displayHeight",
+          "description": "The vertical height measured in metres of the display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "displayWidth": {
+          "title": "displayWidth",
+          "description": "The horizontal width measured in metres of the display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "positionX": {
+          "title": "positionX",
+          "description": "The X-coordinate (horizontal) position of this specific display area measured from the top left of the sign's overall display area to the top left of this specific display area",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "positionY": {
+          "title": "positionY",
+          "description": "The Y-coordinate (vertical) position of this specific display area measured from the top left of the sign's overall display area to the top left of this specific display area",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "_displayGeometryExtension": {
+          "title": "_displayGeometryExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "GddPictogramAttributes": {
+      "title": "GddPictogramAttributes",
+      "description": "ISO 14823 Graphic Data Dictionary attributes with textual or numeric data to supplement a pictogram identification.",
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "title": "attributes",
+          "description": "ISO 14823 \"attributes\" data frame which augments the basic identification of the type of pictogram with further textual or numeric data. The encoding shall follow unaligned packed encoding rules (UPER) [ISO/IEC 8825-2:2015]",
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "_gddPictogramAttributesExtension": {
+          "title": "_gddPictogramAttributesExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "attributes"
+      ]
+    },
+    "GddPictogramCategoryCode": {
+      "title": "GddPictogramCategoryCode",
+      "description": "A 3-digit code to identify a pictogram, as defined in ISO 14823 Graphic Data Dictionary. That standard is inconsistent in its definition of the value range; this model uses the more permissive definition where the bounds are 100 and 999.",
+      "type": "integer",
+      "minimum": 0.0,
+      "exclusiveMinimum": true
+    },
+    "GddPictogramIdentification": {
+      "title": "GddPictogramIdentification",
+      "description": "Group of codes that uniquely identifies a kind of pictogram, according to the ISO 14823 Graphic Data Dictionary",
+      "type": "object",
+      "properties": {
+        "country": {
+          "title": "country",
+          "description": "Country code used to either allow associating a country-specific rendering with the coded pictogram or distinguish nationally-defined pictogram codes.",
+          "$ref": "DATEXII_3_Common.json#/definitions/CountryCode"
+        },
+        "serviceCategory": {
+          "title": "serviceCategory",
+          "description": "Category used to group pictograms for a given usage",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_GddServiceCategoryEnum"
+        },
+        "pictogramCategoryCode": {
+          "title": "pictogramCategoryCode",
+          "description": "Code that identifies a pictogram for a given country and service category.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramCategoryCode"
+        },
+        "_gddPictogramIdentificationExtension": {
+          "title": "_gddPictogramIdentificationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "country",
+        "serviceCategory",
+        "pictogramCategoryCode"
+      ]
+    },
+    "GddServiceCategoryEnum": {
+      "title": "GddServiceCategoryEnum",
+      "description": "Type of service offered by the pictogram, as defined in ISO 14823 Graphic Data Dictionary (GDD)",
+      "type": "string",
+      "enum": [
+        "dangerWarning",
+        "regulatory",
+        "informative",
+        "publicFacilities",
+        "ambientConditions",
+        "roadConditions",
+        "_extended"
+      ]
+    },
+    "GddStructure": {
+      "title": "GddStructure",
+      "description": "Graphic Data Dictionary structure, to identify a pictogram by code and optional supplementary attributes",
+      "type": "object",
+      "properties": {
+        "gddPictogramIdentification": {
+          "title": "gddPictogramIdentification",
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramIdentification"
+        },
+        "gddPictogramAttributes": {
+          "title": "gddPictogramAttributes",
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddPictogramAttributes"
+        },
+        "_gddStructureExtension": {
+          "title": "_gddStructureExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "gddPictogramIdentification"
+      ]
+    },
+    "Image": {
+      "title": "Image",
+      "description": "An image, with encoded data and identification of format",
+      "type": "object",
+      "properties": {
+        "imageData": {
+          "title": "imageData",
+          "description": "Encoded image data",
+          "$ref": "DATEXII_3_Common.json#/definitions/Base64Binary"
+        },
+        "imageFormat": {
+          "title": "imageFormat",
+          "description": "Identifies the image format of the associated image data",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_ImageFormatEnum"
+        },
+        "_imageExtension": {
+          "title": "_imageExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "imageData",
+        "imageFormat"
+      ]
+    },
+    "ImageFormatEnum": {
+      "title": "ImageFormatEnum",
+      "description": "Identifies an image format",
+      "type": "string",
+      "enum": [
+        "bmp",
+        "gif",
+        "jpeg",
+        "png",
+        "tiff",
+        "_extended"
+      ]
+    },
+    "InformationTypeEnum": {
+      "title": "InformationTypeEnum",
+      "description": "Type of text characterisation.",
+      "type": "string",
+      "enum": [
+        "situationInformation",
+        "warning",
+        "prohibition",
+        "obligation",
+        "destination",
+        "travelTime",
+        "delay",
+        "location",
+        "vehicleType",
+        "generalInformation",
+        "blank",
+        "other",
+        "_extended"
+      ]
+    },
+    "ManagedLogicalLocation": {
+      "title": "ManagedLogicalLocation",
+      "description": "The logical location (e.g. a car park, a section of road, a junction etc.) which a VMS contributes to the management of.",
+      "type": "object",
+      "properties": {
+        "managedLogicalLocation": {
+          "title": "managedLogicalLocation",
+          "description": "Identification of the logical location (e.g. a car park, a section of road , a junction etc.) which this sign contributes to the management of.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "distanceFromLogicalLocation": {
+          "title": "distanceFromLogicalLocation",
+          "description": "Distance in metres of the VMS from the logical location which this sign contributes to the management of.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsNonNegativeInteger"
+        },
+        "managedLocation": {
+          "title": "managedLocation",
+          "description": "The location which is managed by the variable message sign, such as the location of a junction or a car park.",
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "_managedLogicalLocationExtension": {
+          "title": "_managedLogicalLocationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "MessageInformationTypeEnum": {
+      "title": "MessageInformationTypeEnum",
+      "description": "Types of information displayable on a VMS.",
+      "type": "string",
+      "enum": [
+        "campaignMessage",
+        "dateTime",
+        "futureInformation",
+        "instructionOrMessage",
+        "situationWarning",
+        "temperature",
+        "trafficManagement",
+        "travelTime",
+        "_extended"
+      ]
+    },
+    "MultiPageDisplay": {
+      "title": "MultiPageDisplay",
+      "description": "A display of multiple pages, sequentially displayed in order of their \"pageNumber\".",
+      "type": "object",
+      "properties": {
+        "sequenceGroupNumber": {
+          "title": "sequenceGroupNumber",
+          "description": "Where MultiPageDisplay instances have the same sequenceGroupNumber, the timed progression through their pages is synchronised.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayAreaSettings": {
+          "title": "displayAreaSettings",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_MultiPageDisplayPageNumberDisplayAreaSettings"
+          },
+          "minItems": 0
+        },
+        "_multiPageDisplayExtension": {
+          "title": "_multiPageDisplayExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "PhysicalSupportEnum": {
+      "title": "PhysicalSupportEnum",
+      "description": "The ways in which equipments such as VMS are mounted or deployed on the road.",
+      "type": "string",
+      "enum": [
+        "centralReservationMounted",
+        "gantryMounted",
+        "overheadBridgeMounted",
+        "roadsideCantileverMounted",
+        "roadsideMounted",
+        "trailerMounted",
+        "tunnelEntranceMounted",
+        "vehicleMounted",
+        "_extended"
+      ]
+    },
+    "Pictogram": {
+      "title": "Pictogram",
+      "description": "A main pictogram displayable on the VMS panel. Note a main pictogram may have an associated supplementary panel which may itself contain a further pictogram and line of text.",
+      "type": "object",
+      "properties": {
+        "customPictogramCode": {
+          "title": "customPictogramCode",
+          "description": "If a custom code list (not based on GDD) is being used, this is the code of the pictogram using the pictogram code list identified in the corresponding PictogramDisplayArea object",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "additionalDescription": {
+          "title": "additionalDescription",
+          "description": "Additional description of the pictogram.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "pictogramFlashing": {
+          "title": "pictogramFlashing",
+          "description": "Indication of whether the pictogram is flashing.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInInverseColour": {
+          "title": "pictogramInInverseColour",
+          "description": "The pictogram is displayed in inverse colour (i.e. the colours are the inverse of normal).",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "viennaConventionCompliant": {
+          "title": "viennaConventionCompliant",
+          "description": "Indicates that the displayed pictogram conforms with the Vienna Convention defined pictogram list as modified by \"UNECE Consolidated Resolution on Road Signs and Signals\".",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInformationType": {
+          "title": "pictogramInformationType",
+          "description": "Allows characterising the type of of displayed information",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+        },
+        "gddStructure": {
+          "title": "gddStructure",
+          "$ref": "DATEXII_3_Vms.json#/definitions/GddStructure"
+        },
+        "_pictogramExtension": {
+          "title": "_pictogramExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "PictogramDisplay": {
+      "title": "PictogramDisplay",
+      "description": "A display of a pictogram on one area on a VMS, potentially with associated supplemental information or instructions.",
+      "type": "object",
+      "properties": {
+        "isPrimaryPictogram": {
+          "title": "isPrimaryPictogram",
+          "description": "Indicates if the given pictogram display area is considered as the primary pictogram (= True) or not (= False).",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramDisplayUrl": {
+          "title": "pictogramDisplayUrl",
+          "description": "Reference to a URL from where an image of the displayed pictogram can be be obtained.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "pictogram": {
+          "title": "pictogram",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_Pictogram"
+        },
+        "supplementaryInformationDisplay": {
+          "title": "supplementaryInformationDisplay",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SupplementaryInformationDisplay"
+        },
+        "image": {
+          "title": "image",
+          "$ref": "DATEXII_3_Vms.json#/definitions/Image"
+        },
+        "_pictogramDisplayExtension": {
+          "title": "_pictogramDisplayExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "pictogram"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "PictogramDisplayArea": {
+      "title": "PictogramDisplayArea",
+      "description": "Characteristics specific to a pictogram display area on the VMS.",
+      "type": "object",
+      "properties": {
+        "pictogramCodeListIdentifier": {
+          "title": "pictogramCodeListIdentifier",
+          "description": "Indicates which pictogram code list is referenced. This may be ISO 14823 or a custom list.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "pictogramNumberOfColours": {
+          "title": "pictogramNumberOfColours",
+          "description": "The number of colours the pictogram display area is capable of rendering.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_pictogramDisplayAreaExtension": {
+          "title": "_pictogramDisplayAreaExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "PictogramEnum": {
+      "title": "PictogramEnum",
+      "description": "Types of pictogram not currently covered by ISO 14823 Graphic Data Dictionary",
+      "type": "string",
+      "enum": [
+        "blankVoid",
+        "bridgeClosed",
+        "carParkFull",
+        "carParkSpacesAvailable",
+        "corridorForEmergencyVehicleAccess",
+        "curveArrowToLeft",
+        "curveArrowToRight",
+        "dangerOfFire",
+        "doubleExitToLeft",
+        "doubleExitToRight",
+        "endOfAdvisorySpeed",
+        "fastenChildrensSeatBelts",
+        "fastenYourSeatBelt",
+        "fire",
+        "footballMatch",
+        "hardShoulderNotRunning",
+        "hardShoulderRunning",
+        "horizontalDiversionToLeft",
+        "horizontalDiversionToRight",
+        "keepASafeDistance",
+        "keepLeft",
+        "keepRight",
+        "lane1ClosedOf2",
+        "lane2ClosedOf2",
+        "lane1ClosedOf3",
+        "lane3ClosedOf3",
+        "lanes1And2ClosedOf3",
+        "lanes2And3ClosedOf3",
+        "lane1ClosedOf4",
+        "lane4ClosedOf4",
+        "lanes1And2ClosedOf4",
+        "lanes3And4ClosedOf4",
+        "lanes1And2And3ClosedOf4",
+        "lanes2And3And4ClosedOf4",
+        "leftHandLaneClosed",
+        "narrowLanesAhead",
+        "obliqueArrowToLeft",
+        "obliqueArrowToRight",
+        "pollutionOrSmogAlert",
+        "rightHandLaneClosed",
+        "singleExitToLeft",
+        "singleExitToRight",
+        "smoke",
+        "snowPloughInAction",
+        "speedCamerasInAction",
+        "straightVerticalArrow",
+        "trafficDeviatedToOppositeCarriagewayAhead",
+        "trafficPartiallyDeviatedToOppositeCarriagewayAhead",
+        "tunnelClosed",
+        "verticalDiversion",
+        "other",
+        "_extended"
+      ]
+    },
+    "PositionXAbsoluteEnum": {
+      "title": "PositionXAbsoluteEnum",
+      "description": "Absolute horizontal positions of an item within an assigned space.",
+      "type": "string",
+      "enum": [
+        "onLeft",
+        "inTheMiddle",
+        "onRight",
+        "_extended"
+      ]
+    },
+    "PositionXRelativeEnum": {
+      "title": "PositionXRelativeEnum",
+      "description": "Relative horizontal positions of one item to another.",
+      "type": "string",
+      "enum": [
+        "toTheLeft",
+        "alignedOnTheLeftSide",
+        "centred",
+        "alignedOnTheRightSide",
+        "toTheRight",
+        "_extended"
+      ]
+    },
+    "PositionYAbsoluteEnum": {
+      "title": "PositionYAbsoluteEnum",
+      "description": "Absolute verticals positions of an item within an assigned space.",
+      "type": "string",
+      "enum": [
+        "atTop",
+        "inTheMiddle",
+        "atBottom",
+        "_extended"
+      ]
+    },
+    "PositionYRelativeEnum": {
+      "title": "PositionYRelativeEnum",
+      "description": "Relative vertical positions of one item to another.",
+      "type": "string",
+      "enum": [
+        "above",
+        "alignedOnTheTopSide",
+        "centred",
+        "alignedOnTheBottomSide",
+        "below",
+        "_extended"
+      ]
+    },
+    "RegularPictogram": {
+      "title": "RegularPictogram",
+      "description": "A regular pictogram displayable on a VMS panel.",
+      "type": "object",
+      "properties": {
+        "pictogramDescription": {
+          "title": "pictogramDescription",
+          "description": "Description of the pictogram.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_PictogramEnum"
+          },
+          "minItems": 0
+        },
+        "presenceOfRedTriangle": {
+          "title": "presenceOfRedTriangle",
+          "description": "Indication of the presence of a red triangle around the pictogram, often used to indicate imminence, typically within 2 km, of signed danger.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "displayedNumericalInformation": {
+          "title": "displayedNumericalInformation",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/DisplayedNumericalInformation"
+          },
+          "minItems": 0,
+          "maxItems": 2
+        },
+        "_regularPictogramExtension": {
+          "title": "_regularPictogramExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/Pictogram"
+        }
+      ]
+    },
+    "SettingReasonEnum": {
+      "title": "SettingReasonEnum",
+      "description": "Coded reasons why a message has been selected for display on the sign.",
+      "type": "string",
+      "enum": [
+        "situation",
+        "operatorCreated",
+        "trafficManagement",
+        "travelTime",
+        "campaign",
+        "default",
+        "_extended"
+      ]
+    },
+    "SupplementalPictogramEnum": {
+      "title": "SupplementalPictogramEnum",
+      "description": "Types of pictograms displayable in supplementary panels (normally below the main pictogram display which it qualifies).",
+      "type": "string",
+      "enum": [
+        "distanceToTheBeginningOfTheApplicationZone",
+        "exceptAnyPowerDrivenVehicleDrawingTrailer",
+        "exceptBus",
+        "exceptGoodsVehicles",
+        "exceptSemitrailer",
+        "exceptVehiclesCarryingDangerousGoods",
+        "inCaseOfIceOrSnow",
+        "lengthOfTheApplicationZone",
+        "restrictedToAnyPowerDrivenVehicleDrawingTrailer",
+        "restrictedToBus",
+        "restrictedToGoodsVehicles",
+        "restrictedToSemiTrailer",
+        "restrictedToVehiclesCarryingDangerousGoods",
+        "maintenanceVehicles",
+        "snowPloughs",
+        "other",
+        "_extended"
+      ]
+    },
+    "SupplementaryInformationDisplay": {
+      "title": "SupplementaryInformationDisplay",
+      "description": "A display of information or a regulatory instruction which is supplemental to the associated pictogram, comprising either an additional line of text or a pictogram or both.",
+      "type": "object",
+      "properties": {
+        "_supplementaryInformationDisplayExtension": {
+          "title": "_supplementaryInformationDisplayExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "SupplementaryPanelArea": {
+      "title": "SupplementaryPanelArea",
+      "description": "Characteristics of a panel which can display details (sometimes regulatory in nature) that are supplementary to one pictogram, comprising an additional line of text or another pictogram.",
+      "type": "object",
+      "properties": {
+        "supplementaryPictogramCodeListIdentifier": {
+          "title": "supplementaryPictogramCodeListIdentifier",
+          "description": "Indicates which supplementary pictogram code list is referenced. This may be ISO 14823 or a custom list.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "relatedPictogramArea": {
+          "title": "relatedPictogramArea",
+          "description": "The displayAreaIndex associated with the pictogram display area that this supplementary display area is designed to supplement.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Integer"
+        },
+        "_supplementaryPanelAreaExtension": {
+          "title": "_supplementaryPanelAreaExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "SupplementaryPictogram": {
+      "title": "SupplementaryPictogram",
+      "description": "An additional pictogram that is displayed in the panel which is supplemental to the associated pictogram display.",
+      "type": "object",
+      "properties": {
+        "pictogramDescription": {
+          "title": "pictogramDescription",
+          "description": "Description of the displayed supplementary pictogram.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SupplementalPictogramEnum"
+        },
+        "pictogramCode": {
+          "title": "pictogramCode",
+          "description": "The code of the supplementary pictogram from the supplementary pictogram code list referenced in the corresponding SupplementaryPanelArea.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "pictogramUrl": {
+          "title": "pictogramUrl",
+          "description": "Reference to a URL from where an image of the displayed supplementary pictogram can be be obtained.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "additionalDescription": {
+          "title": "additionalDescription",
+          "description": "Additional free text description of the supplementary pictogram.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "pictogramFlashing": {
+          "title": "pictogramFlashing",
+          "description": "Indication of whether the pictogram is flashing.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "pictogramInformationType": {
+          "title": "pictogramInformationType",
+          "description": "Allows characterising the type of of displayed information",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+        },
+        "_supplementaryPictogramExtension": {
+          "title": "_supplementaryPictogramExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryInformationDisplay"
+        }
+      ]
+    },
+    "SupplementaryText": {
+      "title": "SupplementaryText",
+      "description": "Text used in a supplementary display associated with a pictogram",
+      "type": "object",
+      "properties": {
+        "textLine": {
+          "title": "textLine",
+          "description": "One line of text displayed in the panel which is supplemental to the pictogram display.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/TextLine"
+        },
+        "_supplementaryTextExtension": {
+          "title": "_supplementaryTextExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "textLine"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/SupplementaryInformationDisplay"
+        }
+      ]
+    },
+    "TextDisplay": {
+      "title": "TextDisplay",
+      "description": "A page of text (comprising one or more ordered lines) that are displayed simultaneously on the VMS. ",
+      "type": "object",
+      "properties": {
+        "textCode": {
+          "title": "textCode",
+          "description": "The code of the specific text, from the defined code list.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "textImageUrl": {
+          "title": "textImageUrl",
+          "description": "Reference to a URL from where an image of the displayed text can be be obtained.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Url"
+        },
+        "textLine": {
+          "title": "textLine",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_TextDisplayLineIndexTextLine"
+          },
+          "minItems": 0
+        },
+        "_textDisplayExtension": {
+          "title": "_textDisplayExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayAreaSettings"
+        }
+      ]
+    },
+    "TextDisplayArea": {
+      "title": "TextDisplayArea",
+      "description": "Characteristics specific to the textual display area on the VMS.",
+      "type": "object",
+      "properties": {
+        "proportionalFont": {
+          "title": "proportionalFont",
+          "description": "Whether the VMS supports proportional fonts",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "maxNumberOfCharacters": {
+          "title": "maxNumberOfCharacters",
+          "description": "Maximum number of displayable characters on a single line in the textual display area of the VMS.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxNumberOfRows": {
+          "title": "maxNumberOfRows",
+          "description": "Maximum number of rows of displayable characters in the textual display area of the VMS.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "textCodeListIdentifier": {
+          "title": "textCodeListIdentifier",
+          "description": "Indicates which textual message code list is referenced. This may be specific to the VMS type defined by vmsTypeCode.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "maxFontHeight": {
+          "title": "maxFontHeight",
+          "description": "Maximum font height in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontHeight": {
+          "title": "minFontHeight",
+          "description": "Minimum font height in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxFontWidth": {
+          "title": "maxFontWidth",
+          "description": "Maximum font width in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontWidth": {
+          "title": "minFontWidth",
+          "description": "Minimum font width in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "maxFontSpacing": {
+          "title": "maxFontSpacing",
+          "description": "Maximum font spacing in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "minFontSpacing": {
+          "title": "minFontSpacing",
+          "description": "Minimum font spacing in pixels.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "_textDisplayAreaExtension": {
+          "title": "_textDisplayAreaExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Vms.json#/definitions/DisplayArea"
+        }
+      ]
+    },
+    "TextLine": {
+      "title": "TextLine",
+      "description": "A single line of text displayed on a text display area or supplementary panel or corresponding to a displayed text. It may correspond to the entire text in the case that text segmentation in lines is not available.",
+      "type": "object",
+      "properties": {
+        "textLine": {
+          "title": "textLine",
+          "description": "A free-text string that is displayed on a single line on the text display area. It may correspond to the entire text in the case that text segmentation in lines is not available.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "lineLanguage": {
+          "title": "lineLanguage",
+          "description": "The language of the displayed text, specified by an ISO 639-1 language code.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Language"
+        },
+        "lineColour": {
+          "title": "lineColour",
+          "description": "The colour of the displayed text.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_ColourEnum"
+        },
+        "lineFlashing": {
+          "title": "lineFlashing",
+          "description": "Indication of whether the displayed text is flashing.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "lineHtml": {
+          "title": "lineHtml",
+          "description": "The displayed line of text defined by an HTML string showing text formatting tags.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "isExactTextOnSign": {
+          "title": "isExactTextOnSign",
+          "description": "Confirms whether the specified text is exactly as displayed, or whether it is just a semantic equivalent.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "textInformationType": {
+          "title": "textInformationType",
+          "description": "Allows characterising the type of of displayed information",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_InformationTypeEnum"
+          },
+          "minItems": 0
+        },
+        "_textLineExtension": {
+          "title": "_textLineExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "textLine"
+      ]
+    },
+    "UnitOfMeasureEnum": {
+      "title": "UnitOfMeasureEnum",
+      "description": "Identifies a unit of measure for a physical quantity",
+      "type": "string",
+      "enum": [
+        "feet",
+        "feetAndInches",
+        "kilometres",
+        "kilometresPerHour",
+        "metres",
+        "miles",
+        "milesPerHour",
+        "percentage",
+        "tonnes",
+        "yards",
+        "_extended"
+      ]
+    },
+    "Vms": {
+      "title": "Vms",
+      "description": "Variable message sign - a display panel used to display one or more messages (text, symbols, pictograms or combinations) that can be changed or switched on or off as required",
+      "type": "object",
+      "properties": {
+        "lanternsPresent": {
+          "title": "lanternsPresent",
+          "description": "Indicates whether the VMS is equipped with flashing lanterns outside the text or pictogram display areas",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "description": {
+          "title": "description",
+          "description": "The description of the VMS (possibly giving a description of its location or its normal use).",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "owner": {
+          "title": "owner",
+          "description": "Owner (authority or organisation) of the VMS. This may not be the same as the authority or organisation which is currently controlling the VMS.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "physicalSupport": {
+          "title": "physicalSupport",
+          "description": "Description of how the VMS is physically mounted or deployed on the road.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_PhysicalSupportEnum"
+        },
+        "vmsType": {
+          "title": "vmsType",
+          "description": "Broad classification of the type of variable message sign.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsTypeEnum"
+        },
+        "vmsTypeCode": {
+          "title": "vmsTypeCode",
+          "description": "Specification of the type of VMS defined by a code, normally country or even manufacturer specific (e.g. MS4).",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "dynamicallyConfigurable": {
+          "title": "dynamicallyConfigurable",
+          "description": "Identifies (when True) that the VMS has a display area that may be dynamically configured to display different combinations of text and pictogram areas. The current configuration will normally be given with each published current VMS setting.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "displayHeight": {
+          "title": "displayHeight",
+          "description": "Height in metres of the sign's overall display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "displayWidth": {
+          "title": "displayWidth",
+          "description": "Width in metres of the sign's overall display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "heightAboveCarriageway": {
+          "title": "heightAboveCarriageway",
+          "description": "Height in metres of the mounted sign above the carriageway, measured to the bottom of the display area.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "dedicatedUsage": {
+          "title": "dedicatedUsage",
+          "description": "Type of usage to which this VMS is dedicated",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_DedicatedUsageEnum"
+        },
+        "vmsConfiguration": {
+          "title": "vmsConfiguration",
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsConfiguration"
+        },
+        "vmsLocation": {
+          "title": "vmsLocation",
+          "description": "The physical point location at which the variable message sign is situated. For mobile VMS which are regularly moved this need not be provided. Instead the VMS location should be provided in the VmsPublication along with current settings.",
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "managedLogicalLocation": {
+          "title": "managedLogicalLocation",
+          "description": "The logical location managed by the VMS",
+          "$ref": "DATEXII_3_Vms.json#/definitions/ManagedLogicalLocation"
+        },
+        "imageLink": {
+          "title": "imageLink",
+          "description": "A URL reference from where an image of the VMS can be obtained.",
+          "$ref": "DATEXII_3_Common.json#/definitions/UrlLink"
+        },
+        "_vmsExtension": {
+          "title": "_vmsExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsConfiguration"
+      ]
+    },
+    "VmsConfiguration": {
+      "title": "VmsConfiguration",
+      "description": "Describes the current configuration and characteristics of a VMS, whether it is statically or dynamically configured.",
+      "type": "object",
+      "properties": {
+        "numberOfDisplayAreas": {
+          "title": "numberOfDisplayAreas",
+          "description": "Number of display areas which the VMS contains.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "displayArea": {
+          "title": "displayArea",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsConfigurationDisplayAreaIndexDisplayArea"
+          },
+          "minItems": 0
+        },
+        "_vmsConfigurationExtension": {
+          "title": "_vmsConfigurationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VmsController": {
+      "title": "VmsController",
+      "description": "A roadside unit which can control one or more variable message signs on a single gantry or mounting or on closely associated gantries or mountings.",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "numberOfVms": {
+          "title": "numberOfVms",
+          "description": "Number of variable message signs controlled by the unit.",
+          "$ref": "DATEXII_3_Common.json#/definitions/NonNegativeInteger"
+        },
+        "externalIdentifier": {
+          "title": "externalIdentifier",
+          "description": "Identification of a VMS controller unit used by the supplier or consumer systems.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "ipAddress": {
+          "title": "ipAddress",
+          "description": "IP network address of the VMS controller unit.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "electronicAddress": {
+          "title": "electronicAddress",
+          "description": "Electronic address of the VMS controller unit (if not IP addressable).",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "vms": {
+          "title": "vms",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerVmsIndexVms"
+          },
+          "minItems": 0
+        },
+        "_vmsControllerExtension": {
+          "title": "_vmsControllerExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version"
+      ]
+    },
+    "VmsControllerFault": {
+      "title": "VmsControllerFault",
+      "description": "Details of the fault which is being reported for the specified variable message sign control unit.",
+      "type": "object",
+      "properties": {
+        "vmsControllerFault": {
+          "title": "vmsControllerFault",
+          "description": "The type of fault which is being reported for the VMS unit.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerFaultEnum"
+        },
+        "_vmsControllerFaultExtension": {
+          "title": "_vmsControllerFaultExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsControllerFault"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "VmsControllerFaultEnum": {
+      "title": "VmsControllerFaultEnum",
+      "description": "Types of variable message sign controller faults.",
+      "type": "string",
+      "enum": [
+        "communicationsFailure",
+        "powerFailure",
+        "other",
+        "unknown",
+        "_extended"
+      ]
+    },
+    "VmsControllerStatus": {
+      "title": "VmsControllerStatus",
+      "description": "Status of a VMS controller unit",
+      "type": "object",
+      "properties": {
+        "vmsControllerTableReference": {
+          "title": "vmsControllerTableReference",
+          "description": "A reference to a versioned VMS controller unit table.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerTableVersionedReference"
+        },
+        "vmsControllerReference": {
+          "title": "vmsControllerReference",
+          "description": "A reference to a versioned VMS controller record in a VMS controller table which defines the characteristics of the VMS controller unit.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerVersionedReference"
+        },
+        "statusUpdateTime": {
+          "title": "statusUpdateTime",
+          "description": "Time at which this VMS controller unit status was updated",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "informationManagerOverride": {
+          "title": "informationManagerOverride",
+          "description": "Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content. This value overrides any value specified at a more general level.",
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "vmsStatus": {
+          "title": "vmsStatus",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsControllerStatusVmsIndexVmsStatus"
+          },
+          "minItems": 0
+        },
+        "vmsControllerFault": {
+          "title": "vmsControllerFault",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerFault"
+          },
+          "minItems": 0
+        },
+        "_vmsControllerStatusExtension": {
+          "title": "_vmsControllerStatusExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsControllerTableReference",
+        "vmsControllerReference"
+      ]
+    },
+    "VmsControllerTable": {
+      "title": "VmsControllerTable",
+      "description": "A versioned VMS controller unit table comprising a number of data records, each record defining the characteristics of a specific deployed variable message sign controller unit.",
+      "type": "object",
+      "properties": {
+        "_id": {
+          "type": "string"
+        },
+        "_version": {
+          "type": "string"
+        },
+        "vmsControllerTableIdentification": {
+          "title": "vmsControllerTableIdentification",
+          "description": "An alphanumeric identification for the VMS controller unit table, possibly human readable. ",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "informationManager": {
+          "title": "informationManager",
+          "description": "Organisation that manages the information content (is responsible for updates of this information) typically the organisation that first made the DATEX II publication of this content.",
+          "$ref": "DATEXII_3_Common.json#/definitions/InternationalIdentifier"
+        },
+        "vmsController": {
+          "title": "vmsController",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsController"
+          },
+          "minItems": 1
+        },
+        "_vmsControllerTableExtension": {
+          "title": "_vmsControllerTableExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "_id",
+        "_version",
+        "vmsController"
+      ]
+    },
+    "VmsFault": {
+      "title": "VmsFault",
+      "description": "Details of the fault which is being reported for the specified variable message sign panel.",
+      "type": "object",
+      "properties": {
+        "vmsFault": {
+          "title": "vmsFault",
+          "description": "The type of fault which is being reported for the specified variable message sign panel.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_VmsFaultEnum"
+        },
+        "_vmsFaultExtension": {
+          "title": "_vmsFaultExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "vmsFault"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/Fault"
+        }
+      ]
+    },
+    "VmsFaultEnum": {
+      "title": "VmsFaultEnum",
+      "description": "Types of variable message sign faults.",
+      "type": "string",
+      "enum": [
+        "incorrectMessageDisplayed",
+        "incorrectPictogramDisplayed",
+        "outOfService",
+        "unableToClearDown",
+        "unknown",
+        "other",
+        "_extended"
+      ]
+    },
+    "VmsMessage": {
+      "title": "VmsMessage",
+      "description": "A message displayed on a VMS which can comprise one or more sequentially displayed text pages and/or pictograms with supplementary details.",
+      "type": "object",
+      "properties": {
+        "associatedTrafficManagementPlan": {
+          "title": "associatedTrafficManagementPlan",
+          "description": "The identification of the traffic management plan or diversion plan with which the message is associated.",
+          "$ref": "DATEXII_3_Common.json#/definitions/String"
+        },
+        "messageSetBy": {
+          "title": "messageSetBy",
+          "description": "The organisation or authority which set the message currently being displayed. ",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "setBySystem": {
+          "title": "setBySystem",
+          "description": "Indicates whether the message has been set automatically by a system. True =  automatically set.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "reasonForSetting": {
+          "title": "reasonForSetting",
+          "description": "The reason why the sign has been set.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "codedReasonForSetting": {
+          "title": "codedReasonForSetting",
+          "description": "The reason, in terms of a high-level coded classification, why the sign has been set. ",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_SettingReasonEnum"
+        },
+        "messageInformationType": {
+          "title": "messageInformationType",
+          "description": "Type of information being displayed.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_MessageInformationTypeEnum"
+          },
+          "minItems": 0
+        },
+        "primarySetting": {
+          "title": "primarySetting",
+          "description": "Identifies whether the message setting is primary (explicitly requested) or is secondary (derived according to an algorithm as the result of setting other signs). True = a primary setting.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "mareNostrumCompliant": {
+          "title": "mareNostrumCompliant",
+          "description": "Indication that the displayed message (text and pictogram) conforms with the formulation recommended by the Mare Nostrum project.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "timeLastSet": {
+          "title": "timeLastSet",
+          "description": "The date/time at which the sign was last set.",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "requestedBy": {
+          "title": "requestedBy",
+          "description": "The authority, organisation or system which requested the setting of the message. This may be different from the authority or system which actually set the message on behalf of the requestor.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MultilingualString"
+        },
+        "relatedSituation": {
+          "title": "relatedSituation",
+          "description": "A reference to the managed situation to which the set message relates.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_SituationVersionedReference"
+          },
+          "minItems": 0
+        },
+        "relatedSituationRecord": {
+          "title": "relatedSituationRecord",
+          "description": "A reference to the situation record within a managed situation to which the set message relates.",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_SituationRecordVersionedReference"
+          },
+          "minItems": 0
+        },
+        "distanceFromClosestSituationRecord": {
+          "title": "distanceFromClosestSituationRecord",
+          "description": "Distance of the VMS from the location of the closest situation record. If the VMS is located within the extent of the situation record this should be set to zero.",
+          "$ref": "DATEXII_3_Common.json#/definitions/MetresAsFloat"
+        },
+        "sequencingInterval": {
+          "title": "sequencingInterval",
+          "description": "The time duration that each text page or pictogram within a message is displayed for before the VMS displays the next text page and/or pictogram in the message.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "displayAreaSettings": {
+          "title": "displayAreaSettings",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsMessageDisplayAreaIndexDisplayAreaSettings"
+          },
+          "minItems": 0
+        },
+        "image": {
+          "title": "image",
+          "$ref": "DATEXII_3_Vms.json#/definitions/Image"
+        },
+        "_vmsMessageExtension": {
+          "title": "_vmsMessageExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "timeLastSet"
+      ]
+    },
+    "VmsPublication": {
+      "title": "VmsPublication",
+      "description": "A publication containing the current status and settings of one or more VMS controller units, each unit controlling one or more individual variable message signs.",
+      "type": "object",
+      "properties": {
+        "headerInformation": {
+          "title": "headerInformation",
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "vmsControllerStatus": {
+          "title": "vmsControllerStatus",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerStatus"
+          },
+          "minItems": 1
+        },
+        "_vmsPublicationExtension": {
+          "title": "_vmsPublicationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "vmsControllerStatus"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "VmsStatus": {
+      "title": "VmsStatus",
+      "description": "Provides the current status and settings of the VMS and the currently displayed information.",
+      "type": "object",
+      "properties": {
+        "flashingLightsOn": {
+          "title": "flashingLightsOn",
+          "description": "Indicates if lights outside display areas (called lanterns in some countries) are turned on.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Boolean"
+        },
+        "remainingPowerCapacity": {
+          "title": "remainingPowerCapacity",
+          "description": "The estimated length of time for which the VMS will have power to continue operating",
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "statusUpdateTime": {
+          "title": "statusUpdateTime",
+          "description": "Time at which this VMS status was updated",
+          "$ref": "DATEXII_3_Common.json#/definitions/DateTime"
+        },
+        "sequencingInterval": {
+          "title": "sequencingInterval",
+          "description": "The time duration that each message is displayed for before the VMS displays the next message in the sequence.",
+          "$ref": "DATEXII_3_Common.json#/definitions/Seconds"
+        },
+        "workingStatus": {
+          "title": "workingStatus",
+          "description": "Indicates whether the VMS is usable. Note it can still be usable with minor faults.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/_WorkingStatusEnum"
+        },
+        "vmsDynamicConfiguration": {
+          "title": "vmsDynamicConfiguration",
+          "$ref": "DATEXII_3_Vms.json#/definitions/VmsConfiguration"
+        },
+        "vmsMessage": {
+          "title": "vmsMessage",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/_VmsStatusMessageIndexVmsMessage"
+          },
+          "minItems": 0
+        },
+        "vmsLocationOverride": {
+          "title": "vmsLocationOverride",
+          "description": "The current physical point location at which the VMS is situated. This overrides any physical location stated in the corresponding Vms object. Typically it is used for giving the updated physical location of a mobile VMS which has recently been moved.",
+          "$ref": "DATEXII_3_LocationReferencing.json#/definitions/_Location"
+        },
+        "managedLogicalLocationOverride": {
+          "title": "managedLogicalLocationOverride",
+          "description": "The current logical location that is being managed by the VMS which overrides any stated in the corresponding Vms object. Typically it is used for giving the updated managed location of a mobile VMS which has recently been moved.",
+          "$ref": "DATEXII_3_Vms.json#/definitions/ManagedLogicalLocation"
+        },
+        "vmsFault": {
+          "title": "vmsFault",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsFault"
+          },
+          "minItems": 0
+        },
+        "_vmsStatusExtension": {
+          "title": "_vmsStatusExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      }
+    },
+    "VmsTablePublication": {
+      "title": "VmsTablePublication",
+      "description": "A publication containing one or more VMS controller unit tables each comprising a set of records which hold details of VMS controller units.",
+      "type": "object",
+      "properties": {
+        "headerInformation": {
+          "title": "headerInformation",
+          "$ref": "DATEXII_3_Common.json#/definitions/HeaderInformation"
+        },
+        "vmsControllerTable": {
+          "title": "vmsControllerTable",
+          "type": "array",
+          "items": {
+            "$ref": "DATEXII_3_Vms.json#/definitions/VmsControllerTable"
+          },
+          "minItems": 1
+        },
+        "_vmsTablePublicationExtension": {
+          "title": "_vmsTablePublicationExtension",
+          "$ref": "DATEXII_3_Common.json#/definitions/_ExtensionType"
+        }
+      },
+      "required": [
+        "headerInformation",
+        "vmsControllerTable"
+      ],
+      "allOf": [
+        {
+          "$ref": "DATEXII_3_Common.json#/definitions/PayloadPublication"
+        }
+      ]
+    },
+    "VmsTypeEnum": {
+      "title": "VmsTypeEnum",
+      "description": "Type of variable message sign.",
+      "type": "string",
+      "enum": [
+        "colourGraphic",
+        "rotatingPrismSign",
+        "monochromeGraphic",
+        "simpleMatrixSign",
+        "fullMatrixSign",
+        "rollerBlindSign",
+        "virtualVms",
+        "other",
+        "_extended"
+      ]
+    },
+    "WorkingStatusEnum": {
+      "title": "WorkingStatusEnum",
+      "description": "Identifies the working status of a VMS.",
+      "type": "string",
+      "enum": [
+        "blank",
+        "covered",
+        "notWorking",
+        "working",
+        "_extended"
+      ]
+    }
+  }
+}
